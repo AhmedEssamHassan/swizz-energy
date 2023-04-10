@@ -1,15 +1,40 @@
-import React from "react";
+import React, { useRef } from "react";
 import Main_home from "../components/main-home/Main_home";
 import video from "../assets/Video_Energy_80MB.mp4";
-
+import { Link } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 function Home() {
   return (
     <div>
-      <header className="relative h-[100%] xl:h-[100vh] w-full overflow-hidden">
-        <div className="bg-transparent font-extrabold absolute flex items-center justify-center md:justify-start w-full h-full"></div>
-        <video autoPlay loop muted className="w-[full] object-contain">
+      <header className="relative h-[100%] xl:h-[100vh] w-full overflow-hidden  ">
+        <video autoPlay loop muted className="w-[full] object-contain    ">
           <source src={video} type="video/mp4" />
         </video>
+        <div className="container mx-auto px-2 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-start">
+          <div className="  font-extrabold  l   ">
+            <h1 className="  text-base h-[20px] sm:text-3xl md:text-4xl xl:text-5xl  sm:h-[150px] md:h-[175px] lg:h-[200px] text-text-color transition ease-out transition-duration ">
+              <Typewriter
+                options={{
+                  strings: [
+                    "SUSTAINARBLE ENGERGY <br/> GREEN HYDROGEN  <br /> CAPTURING CARBON    <br /> WASTE MANAGEMENT ",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  cursor: "",
+                  delay: 10,
+                }}
+              />
+            </h1>
+          </div>
+        </div>
+        <Link
+          to="/"
+          className="  fixed z-30 top-[50%] translate-y-[-50%] -right-[55px] lg:-right-[77px]   font-bold text-base tracking-[1px]
+           bg-bg-color text-white  w-[160px] lg:w-[200px] flex items-center justify-center h-[50px] 
+            -rotate-90"
+        >
+          Let's talk
+        </Link>
       </header>
       <Main_home />
     </div>

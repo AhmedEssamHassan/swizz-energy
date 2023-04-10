@@ -6,6 +6,7 @@ export default {
       colors: {
         "text-color": "#222",
         "main-color": "#EED484",
+        "bg-color": "#C00000"
       },
     },
   },

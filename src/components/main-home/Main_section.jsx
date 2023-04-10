@@ -7,7 +7,7 @@ const Main_section = ({ reverse }) => {
     <>
       <style jsx="true">
         {`
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             .main_section {
               position: relative;
               background-image: url(../${img});

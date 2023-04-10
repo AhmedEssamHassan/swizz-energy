@@ -13,7 +13,7 @@ import {
   SolutionOutlined,
 } from "@ant-design/icons";
 import { Button, Menu } from "antd";
-import logo from "../assets/swiss.svg";
+import logo from "../assets/swiss-logo.jpg";
 const items = [
   {
     label: <Link to={"/"}>Home</Link>,
@@ -151,14 +151,14 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
                 : "none"
               : "none",
         }}
-        className="z-50 fixed top-0 left-0 w-full h-[80px] flex items-center bg-transparent "
+        className="z-50 fixed top-0 left-0 w-full h-[100px] flex items-center bg-transparent "
       >
         <div className="container mx-auto flex justify-between items-center ">
           {/* <Link className="text-[#c00000] text-2xl font-bold" to={"/"}>
             swiss energy hub
           </Link> */}
           <Link className="swiss energy hub" to={"/"}>
-            <img width={200} src={logo} title="" alt="" />
+            <img width={150} height="60" src={logo} title="" alt="logo" />
           </Link>
           <div className="flex justify-center items-center">
             {screenWidth > 767 && (
