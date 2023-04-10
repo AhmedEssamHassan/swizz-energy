@@ -10,7 +10,7 @@ import swizzBlack from "../../assets/wizz-black.jpg";
 function Footer() {
   const [isHover, setIsHover] = useState(false);
   return (
-    <footer className="relative bg-[#333333] flex flex-col justify-center items-center py-10">
+    <footer className="relative bg-[#333333] flex flex-col justify-center min-h-[100vh] items-center py-10">
       <div className="social absolute flex flex-col left-0 bottom-20 px-5">
         <a className="cursor-pointer">
           <FaFacebookF className="mb-4 text-white text-[20px]" />
@@ -28,11 +28,14 @@ function Footer() {
           <AiOutlineTwitter className="mb-4 text-white text-[20px]" />
         </a>
       </div>
-      <h3 className="text-[50px] text-center text-white">
-        Swiss Energy hub <br /> <span className="text-[22px]">SWITZERLAND</span>
+      <h3 className="text-[30px] md:text-[50px] text-center text-white">
+        swiss energy hub <br />{" "}
+        <span className="tracking-[5px] text-[18px] md:text-[22] text-sm text-zinc-400">
+          SWITZERLAND
+        </span>
       </h3>
       <div
-        className="my-10"
+        className="my-10 h-[167px]"
         onMouseOver={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
       >
@@ -56,36 +59,41 @@ function Footer() {
         </svg> */}
       </div>
       <div className="text-white contacts container mx-auto flex flex-col md:flex-row justify-around">
-        <div className="flex flex-col mx-20 justify-start items-center mb-10 md:mb-0">
+        <div className="flex flex-col justify-start items-center mb-10 md:mb-0">
           <IoLocationSharp
             style={{ fontSize: "25px", color: "white", marginBottom: "10px" }}
           />
           <a>
-            <p className="text-[18px] text-center">8434 Embrach</p>
+            <p className="text-[18px] text-center">Tannenstrasse 16</p>
 
-            <p className="text-[18px] text-center">Zuich</p>
+            <p className="text-[18px] text-center">8424 Embrach ZH</p>
+            <p className="text-[18px] text-center">Switzerland</p>
           </a>
         </div>
-        <div className="flex flex-col mx-20 justify-start items-center mb-10 md:mb-0">
+        <div className="flex flex-col justify-start items-center mb-10 md:mb-0">
           <BsTelephoneFill
             style={{ fontSize: "22px", color: "white", marginBottom: "10px" }}
           />
           <a>
-            <p className="text-[18px] text-center">+41 71 660 10 07</p>
+            <p className="text-[18px] whitespace-nowrap text-center">
+              +41 44 589 70 55
+            </p>
 
-            <p className="text-[18px] text-center">Mo-Fr 09:00-18:00</p>
+            <p className="text-[18px] whitespace-nowrap text-center">
+              Mo - Fr 09:00 - 17:00
+            </p>
           </a>
         </div>
-        <div className="flex flex-col mx-20 justify-start items-center mb-10 md:mb-0">
+        <div className="flex flex-col justify-start items-center mb-10 md:mb-0">
           <IoIosMail
             style={{ fontSize: "25px", color: "white", marginBottom: "10px" }}
           />
           <a>
-            <p className="text-[18px] text-center">Hauptstrasse 157</p>
+            <p className="text-[18px] text-center">info@swissenergyhub.com</p>
 
-            <p className="text-[18px] text-center">8272 Ermatingen</p>
+            <p className="text-[18px] text-center">www.swissenergyhub.com</p>
 
-            <p className="text-[18px] text-center">Schweiz</p>
+            <p className="text-[18px] text-center">AGB</p>
           </a>
         </div>
       </div>

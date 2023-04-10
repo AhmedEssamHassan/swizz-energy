@@ -62,14 +62,15 @@ const Aside = ({ scrollPosition }) => {
                `}
             >
               <div
-                className={`w-[${
-                  menuAvtive ? "35px" : "25px"
-                }] transition-all h-[2px] 
-                ${menuAvtive && "rotate-45 translate-y-1"}
+                className={`${
+                  menuAvtive ? "w-[35px]" : "w-[25px]"
+                } transition-all h-[2px] ${
+                  menuAvtive && "rotate-45 translate-y-1"
+                }
                 bg-[#333]
                 `}
               ></div>
-              {!menuAvtive && (
+              {menuAvtive ? null : (
                 <div
                   className={`w-[35px] transition-all h-[2px]
                   bg-[#333]
@@ -79,9 +80,9 @@ const Aside = ({ scrollPosition }) => {
               )}
 
               <div
-                className={`w-[${
-                  menuAvtive ? "35px" : "15px"
-                }] transition-all h-[2px] 
+                className={`${
+                  menuAvtive ? "w-[35px]" : "w-[15px]"
+                } transition-all h-[2px] 
                 ${menuAvtive && "-rotate-45 -translate-y-1"}
                 bg-[#333]
                 `}

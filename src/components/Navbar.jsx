@@ -12,18 +12,18 @@ import {
   ShareAltOutlined,
   SolutionOutlined,
 } from "@ant-design/icons";
-import { Menu } from "antd";
-
+import { Button, Menu } from "antd";
+import logo from "../assets/swiss.svg";
 const items = [
   {
     label: <Link to={"/"}>Home</Link>,
     key: "home",
-    icon: <HomeOutlined />,
+    // icon: <HomeOutlined />,
   },
   {
     label: "Solutions",
     key: "solutions",
-    icon: <SolutionOutlined />,
+    // icon: <SolutionOutlined />,
     children: [
       {
         type: "group",
@@ -47,7 +47,7 @@ const items = [
   {
     label: "Knolege hub",
     key: "knolegeHub",
-    icon: <BulbOutlined />,
+    // icon: <BulbOutlined />,
     children: [
       {
         type: "group",
@@ -63,7 +63,7 @@ const items = [
   {
     label: "About us",
     key: "about",
-    icon: <QuestionCircleOutlined />,
+    // icon: <QuestionCircleOutlined />,
     children: [
       {
         type: "group",
@@ -88,15 +88,10 @@ const items = [
       },
     ],
   },
-  {
-    label: "Contact",
-    key: "contact",
-    icon: <ShareAltOutlined />,
-  },
 ];
 
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 function Navbar({ screenWidth, navbarColor, scrollPosition }) {
   console.log({ screenWidth });
   const [current, setCurrent] = useState("mail");
@@ -105,15 +100,44 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
     // console.log("click ", e);
     // setCurrent(e.key);
   };
+  const location = useLocation();
+  console.log({ location });
   return (
     <>
       <style>
         {`
-		ul{
+		nav ul{
 			background: transparent !important;
 			border: none !important;
 		}
     
+    nav ul li{
+      font-size:15px !important;
+      font-weight: 600
+    }
+    
+    nav ul li.ant-menu-item-active::after{
+      // border-bottom-color:#c00000 !important;
+    }
+    
+    .ant-menu > .ant-menu-item:hover,
+    .ant-menu > .ant-menu-submenu:hover,
+    .ant-menu > .ant-menu-item-active,
+    .ant-menu> .ant-menu-submenu-active,
+    .ant-menu > .ant-menu-item-open,
+    .ant-menu> .ant-menu-submenu-open,
+    .ant-menu > .ant-menu-item-selected,
+    .ant-menu > .ant-menu-submenu-selected {
+      // color: red;
+    }
+
+    @media (max-width: 1023px) {
+      nav ul li{
+        // padding-inline: 2px !important;
+        font-size:14px !important;
+      }    
+    }
+
 		`}
       </style>
       <nav
@@ -130,20 +154,34 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
         className="z-50 fixed top-0 left-0 w-full h-[80px] flex items-center bg-transparent "
       >
         <div className="container mx-auto flex justify-between items-center ">
-          <Link className="mx-7" to={"/"}>
-            logo
+          {/* <Link className="text-[#c00000] text-2xl font-bold" to={"/"}>
+            swiss energy hub
+          </Link> */}
+          <Link className="swiss energy hub" to={"/"}>
+            <img width={200} src={logo} title="" alt="" />
           </Link>
-          {screenWidth > 767 && (
-            <Menu
-              style={{ background: "transparent" }}
-              disabledOverflow={true}
-              className=""
-              onClick={onClick}
-              selectedKeys={[current]}
-              mode="horizontal"
-              items={items}
-            />
-          )}
+          <div className="flex justify-center items-center">
+            {screenWidth > 767 && (
+              <Menu
+                style={{ background: "transparent" }}
+                disabledOverflow={true}
+                className=""
+                onClick={onClick}
+                // activeKey={location.pathname}
+                selectedKeys={[current]}
+                mode="horizontal"
+                items={items}
+              />
+            )}
+            <a
+              href="https://calendly.com/swissenergyhub"
+              target={"_blank"}
+              className="text-white ml-3 bg-[#c00000] px-[8px] py-[4px] rounded-[7px] border-none flex justify-center items-center"
+            >
+              {/* <ShareAltOutlined className="mr-1 text-lg" />{" "} */}
+              <span className="text-[15px] font-[600]">Let's Talk</span>
+            </a>
+          </div>
         </div>
       </nav>
     </>
