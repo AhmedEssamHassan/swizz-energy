@@ -7,7 +7,7 @@ const Main_section = ({ reverse }) => {
     <>
       <style jsx="true">
         {`
-          @media (max-width: 768px) {
+          @media (max-width: 767px) {
             .main_section {
               position: relative;
               background-image: url(../${img});
@@ -61,7 +61,7 @@ const Main_section = ({ reverse }) => {
           <div className="text-center mt-8">
             <a
               href="#"
-              className="no-underline gap-1 bg-main-color  rounded-full h-[50px] mb-4 flex  items-center justify-center  w-[220px]  mx-auto hover:bg-white  border-main-color  border-[3px] font-medium  text-base"
+              className="no-underline gap-1 bg-main-color  rounded-full   mb-4 flex  items-center justify-center w-[165px] md:w-[220px]  mx-auto hover:bg-white  border-main-color  border-[3px] font-medium  text-base h-[45px] md:h-[50px]"
             >
               <b className="text-[14px]  leading-[1px] ">
                 <RightOutlined />

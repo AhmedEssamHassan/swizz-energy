@@ -67,7 +67,11 @@ function App() {
             screenWidth={screenWidth}
           />
         ) : (
-          <Aside scrollPosition={scrollPosition} />
+          <Aside
+            scrollPosition={scrollPosition}
+            screenWidth={screenWidth}
+            navbarColor={navbarColor}
+          />
         )}
 
         <Routes>

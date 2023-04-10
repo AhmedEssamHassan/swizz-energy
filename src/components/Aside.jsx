@@ -2,13 +2,26 @@ import { Squash as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/swiss-logo.jpg";
-const Aside = ({ scrollPosition }) => {
+const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
   const [menuActive, setMenuActive] = useState(false);
 
   const activeHandler = () => setMenuActive(!menuActive);
-
   return (
-    <nav className=" h-[100px] px-[20px] md:mx-0  flex items-center fixed w-[100%] z-20 ">
+    <nav
+      className=" h-[100px] px] md:mx-0  flex items-center fixed w-[100%] z-20 "
+      style={{
+        backgroundColor: screenWidth <= 767 ? navbarColor : "transparent",
+        transition: "all .3s ease-in",
+        boxShadow:
+          screenWidth <= 767
+            ? scrollPosition > 100
+              ? "0px 15px 45px #00000038"
+              : "none"
+            : "none",
+
+        height: scrollPosition > 100 ? "70px" : "100px",
+      }}
+    >
       <style jsx="true">
         {`
           .border-top {
@@ -35,6 +48,14 @@ const Aside = ({ scrollPosition }) => {
           }
           aside.active {
             transition: all 0.5s ease-in-out 0s;
+          }
+
+          .hamburger-react[aria-expanded="false"] > div:first-of-type div {
+            width: 24px !important;
+          }
+
+          .hamburger-react[aria-expanded="false"] > div:last-of-type div {
+            width: 15px !important;
           }
         `}
       </style>

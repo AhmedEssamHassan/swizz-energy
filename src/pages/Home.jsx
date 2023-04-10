@@ -12,7 +12,7 @@ function Home() {
         </video>
         <div className="container mx-auto px-2 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-start">
           <div className="  font-extrabold  l   ">
-            <h1 className="  text-base h-[20px] sm:text-3xl md:text-4xl xl:text-5xl  sm:h-[150px] md:h-[175px] lg:h-[200px] text-text-color transition ease-out transition-duration ">
+            <h1 className="  text-white text-base h-[20px] sm:text-3xl md:text-4xl xl:text-5xl  sm:h-[150px] md:h-[175px] lg:h-[200px] sm:text-text-color transition ease-out transition-duration ">
               <Typewriter
                 options={{
                   strings: [
@@ -22,6 +22,7 @@ function Home() {
                   loop: true,
                   cursor: "",
                   delay: 10,
+                  deleteSpeed: 5,
                 }}
               />
             </h1>
@@ -29,8 +30,8 @@ function Home() {
         </div>
         <Link
           to="/"
-          className="  fixed z-30 top-[50%] translate-y-[-50%] -right-[55px] lg:-right-[77px]   font-bold text-base tracking-[1px]
-           bg-bg-color text-white  w-[160px] lg:w-[200px] flex items-center justify-center h-[50px] 
+          className="  fixed z-30 top-[50%] translate-y-[-50%] -right-[50px] sm:-right-[55px] lg:-right-[77px]   font-bold text-base tracking-[1px]
+           bg-bg-color text-white w-[135px]  sm:w-[160px] lg:w-[200px] flex items-center justify-center sm:h-[50px] h-[35px] 
             -rotate-90"
         >
           Let's talk

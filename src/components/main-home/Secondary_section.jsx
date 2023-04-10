@@ -23,7 +23,7 @@ const Secondary_section = () => {
               </h2>
               <div className="relative  z-20 ">
                 <button
-                  className="no-underline gap-1 bg-none  rounded-full  mb-4 flex  items-center justify-center  w-[220px]  mx-auto  border-white border-[3px] font-medium  text-base text-white hover:text-text-color hover:bg-white lg:mr-[8vw] outline-none py-4"
+                  className="no-underline gap-1 bg-none  rounded-full  mb-4 flex  items-center justify-center    mx-auto  border-white border-[3px] font-medium  text-base text-white hover:text-text-color hover:bg-white lg:mr-[8vw] outline-none h-[45px] md:h-[50px]  w-[165px] md:w-[220px] "
                   onClick={clickHandler}
                 >
                   <b className="text-[14px]  leading-[1px] ">
