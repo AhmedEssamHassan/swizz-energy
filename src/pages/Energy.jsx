@@ -27,7 +27,7 @@ function Energy() {
         </p>
         <br />
         <p className="px-3 md:px-0 colored text-bg-color leading-normal md:leading-8 text-[17px] lg:text-xl font-normal md:font-medium ">
-          <BsArrow90DegDown /> 1 kg pellets contains{" "}
+          <BsArrow90DegDown /> 1 kg pellets contains
           <span className="font-extrabold">5 megajoules (MJ)</span> energy
         </p>
         <br />

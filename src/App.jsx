@@ -16,6 +16,7 @@ import About from "./pages/About";
 import Knowledge from "./pages/Knowledge";
 import Vision from "./pages/Vision";
 import Mission from "./pages/Mission";
+import GTC from "./pages/GTC";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -81,6 +82,7 @@ function App() {
           <Route path="/energy" element={<Energy />} />
           <Route path="/hydrogen" element={<Hydrogen />} />
           <Route path="/pellets" element={<Pellets />} />
+          <Route path="/gtc" element={<GTC />} />
           <Route path="/about" element={<About />} />
           <Route path="/knowledge" element={<Knowledge />} />
           <Route path="/about/vision" element={<Vision />} />
