@@ -5,7 +5,8 @@ import Secondary_section from "./Secondary_section";
 
 function Main_home() {
   return (
-    <section className="mt-0">
+    <section className="mt-0 pt-8">
+      <div className="h-[100px] bg-white"></div>
       <Main_section reverse={false} />
       <Main_section reverse={true} />
       <Main_section reverse={false} />

@@ -88,13 +88,10 @@ function Footer() {
           <IoIosMail
             style={{ fontSize: "25px", color: "white", marginBottom: "10px" }}
           />
-          <a>
-            <p className="text-[18px] text-center">info@swissenergyhub.com</p>
+          <p className="text-[18px] text-center">info@swissenergyhub.com</p>
 
-            <p className="text-[18px] text-center">www.swissenergyhub.com</p>
-
-            <p className="text-[18px] text-center">AGB</p>
-          </a>
+          <p className="text-[18px] text-center">www.swissenergyhub.com</p>
+          <a className="text-[18px] text-center cursor-pointer">GTC</a>
         </div>
       </div>
     </footer>

@@ -3,18 +3,19 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Recycling from "./pages/Recycling";
-import Hydrogen from "./pages/Hydrogen";
-import KnolegeHub from "./pages/KnolegeHub";
-import WhoWeAre from "./pages/WhoWeAre";
-import Vision from "./pages/Vision";
-import Mission from "./pages/Mission";
-import TargetAudience from "./pages/TargetAudience";
-import Electricity from "./pages/Electricity";
+
 import Footer from "./components/footer/Footer";
 import ProgressBar from "react-progressbar-on-scroll";
 import { Cursor } from "custom-pointer-react";
 import Aside from "./components/Aside";
+import Energy from "./pages/Energy";
+import Pellets from "./pages/Pellets";
+import Recycling from "./pages/Recycling";
+import Hydrogen from "./pages/Hydrogen";
+import About from "./pages/About";
+import Knowledge from "./pages/Knowledge";
+import Vision from "./pages/Vision";
+import Mission from "./pages/Mission";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -77,13 +78,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/recycling" element={<Recycling />} />
-          <Route path="/electricity" element={<Electricity />} />
+          <Route path="/energy" element={<Energy />} />
           <Route path="/hydrogen" element={<Hydrogen />} />
-          <Route path="/knolegeHub" element={<KnolegeHub />} />
-          <Route path="/Who-we-are" element={<WhoWeAre />} />
-          <Route path="/vision" element={<Vision />} />
-          <Route path="/mission" element={<Mission />} />
-          <Route path="/target-audience" element={<TargetAudience />} />
+          <Route path="/pellets" element={<Pellets />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/knowledge" element={<Knowledge />} />
+          <Route path="/about/vision" element={<Vision />} />
+          <Route path="/about/mission" element={<Mission />} />
         </Routes>
         <Footer />
       </div>

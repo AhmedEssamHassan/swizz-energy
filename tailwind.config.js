@@ -2,11 +2,21 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    container: {
+      center: true,
+      margin: {
+        DEFAULT: "4rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
+      },
+    },
     extend: {
       colors: {
         "text-color": "#222",
         "main-color": "#EED484",
-        "bg-color": "#C00000"
+        "bg-color": "#C00000",
       },
     },
   },

@@ -1,104 +1,42 @@
 import React from "react";
-import {
-  AppstoreOutlined,
-  BulbOutlined,
-  ContactsFilled,
-  ContactsOutlined,
-  ContactsTwoTone,
-  HomeOutlined,
-  MailOutlined,
-  QuestionCircleOutlined,
-  SettingOutlined,
-  ShareAltOutlined,
-  SolutionOutlined,
-} from "@ant-design/icons";
-import { Button, Menu } from "antd";
+import { Menu } from "antd";
 import logo from "../assets/swiss-logo.jpg";
+import { useState } from "react";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 const items = [
   {
-    label: <Link to={"/"}>Home</Link>,
-    key: "home",
-    // icon: <HomeOutlined />,
+    label: <NavLink to={"/energy"}>Energy</NavLink>,
+    key: "energy",
   },
   {
-    label: "Solutions",
-    key: "solutions",
-    // icon: <SolutionOutlined />,
-    children: [
-      {
-        type: "group",
-        children: [
-          {
-            label: <Link to={"/recycling"}>Recycling</Link>,
-            key: "recycling",
-          },
-          {
-            label: <Link to={"/electricity"}>Electricity</Link>,
-            key: "electricity",
-          },
-          {
-            label: <Link to={"/hydrogen"}>Hydrogen</Link>,
-            key: "hydrogen",
-          },
-        ],
-      },
-    ],
+    label: <NavLink to={"/recycling"}>Recycling</NavLink>,
+    key: "recycling",
   },
   {
-    label: "Knolege hub",
-    key: "knolegeHub",
-    // icon: <BulbOutlined />,
-    children: [
-      {
-        type: "group",
-        children: [
-          {
-            label: <Link to={"/knolegeHub"}>Nice to know</Link>,
-            key: "knolegeHub1",
-          },
-        ],
-      },
-    ],
+    label: <NavLink to={"/pellets"}>Pellets</NavLink>,
+    key: "pellets",
   },
   {
-    label: "About us",
+    label: <NavLink to={"/hydrogen"}>Hydrogen</NavLink>,
+    key: "hydrogen",
+  },
+  {
+    label: <NavLink to={"/knowledge"}>knowledge</NavLink>,
+    key: "knowledge",
+  },
+  {
+    label: <NavLink to={"/about"}>About us</NavLink>,
     key: "about",
-    // icon: <QuestionCircleOutlined />,
-    children: [
-      {
-        type: "group",
-        children: [
-          {
-            label: <Link to={"/Who-we-are"}>Who we are</Link>,
-            key: "Who-we-are",
-          },
-          {
-            label: <Link to={"/vision"}>Vision</Link>,
-            key: "vision",
-          },
-          {
-            label: <Link to={"/mission"}>Mission</Link>,
-            key: "mission",
-          },
-          {
-            label: <Link to={"/target-audience"}>Target audience</Link>,
-            key: "target-audience",
-          },
-        ],
-      },
-    ],
   },
 ];
 
-import { useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
 function Navbar({ screenWidth, navbarColor, scrollPosition }) {
   console.log({ screenWidth });
   const [current, setCurrent] = useState("mail");
   const navigate = useNavigate();
   const onClick = (e) => {
     // console.log("click ", e);
-    // setCurrent(e.key);
+    setCurrent(e.key);
   };
   const location = useLocation();
   console.log({ location });
@@ -110,34 +48,23 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
 			background: transparent !important;
 			border: none !important;
 		}
-    
     nav ul li{
       font-size:15px !important;
       font-weight: 600
     }
-    
-    nav ul li.ant-menu-item-active::after{
-      // border-bottom-color:#c00000 !important;
+    .ant-menu-item-selected::after{
+      border-bottom-color:#C00000 !important;
     }
-    
-    .ant-menu > .ant-menu-item:hover,
-    .ant-menu > .ant-menu-submenu:hover,
-    .ant-menu > .ant-menu-item-active,
-    .ant-menu> .ant-menu-submenu-active,
-    .ant-menu > .ant-menu-item-open,
-    .ant-menu> .ant-menu-submenu-open,
-    .ant-menu > .ant-menu-item-selected,
-    .ant-menu > .ant-menu-submenu-selected {
-      // color: red;
+    .ant-menu-item-selected{
+      color:#C00000 !important;
     }
-
     @media (max-width: 1023px) {
       nav ul li{
-        // padding-inline: 2px !important;
         font-size:14px !important;
       }    
     }
-
+    
+    
 		`}
       </style>
       <nav
@@ -153,7 +80,7 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
         }}
         className="z-50 fixed top-0 left-0 w-full h-[100px] flex items-center bg-transparent "
       >
-        <div className="container mx-auto flex justify-between items-center ">
+        <div className="container mx-auto px-0 lg:px-14 flex justify-between items-center ">
           {/* <Link className="text-[#c00000] text-2xl font-bold" to={"/"}>
             swiss energy hub
           </Link> */}
@@ -167,20 +94,19 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
                 disabledOverflow={true}
                 className=""
                 onClick={onClick}
-                // activeKey={location.pathname}
+                activeKey={location.pathname}
                 selectedKeys={[current]}
                 mode="horizontal"
                 items={items}
               />
             )}
-            <a
+            {/* <a
               href="https://calendly.com/swissenergyhub"
               target={"_blank"}
               className="text-white ml-3 bg-[#c00000] px-[8px] py-[4px] rounded-[7px] border-none flex justify-center items-center"
             >
-              {/* <ShareAltOutlined className="mr-1 text-lg" />{" "} */}
               <span className="text-[15px] font-[600]">Let's Talk</span>
-            </a>
+            </a> */}
           </div>
         </div>
       </nav>

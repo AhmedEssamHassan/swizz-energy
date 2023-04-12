@@ -2,7 +2,7 @@ import { RightOutlined } from "@ant-design/icons";
 import { Parallax } from "react-scroll-parallax";
 import img from "../../assets/img-2.jpg";
 
-const Main_section = ({ reverse }) => {
+const Main_section = ({ reverse, title, content }) => {
   return (
     <>
       <style jsx="true">
@@ -42,22 +42,9 @@ const Main_section = ({ reverse }) => {
         </div>
         <div className="info  max-w-[90%] md:max-w-[85%] lg:max-w-[75%]  mx-auto  md:pb-12   ">
           <h2 className="heading  text-2xl  sm:text-3xl  text-white md:text-text-color font-bold text-center mb-5  py-5 md:py-10 xl:py-14 lg:text-3xl xl:text-5xl ">
-            Enabling Logistics Decarbonisation
+            {title}
           </h2>
-          <p className="text-white md:text-text-color leading-normal md:leading-8 text-[17px] lg:text-xl font-normal md:font-medium text-justify">
-            Climate action is a global imperative, requiring collective action
-            as we navigate the energy transition. As a leading company, MSC has
-            a crucial role to play in decarbonising logistics. Collaboration
-            across the supply and value chain is key to enable the investments
-            needed to decarbonise as well as accelerate solutions at scale.
-          </p>
-          <p className="text-white md:text-text-color leading-normal md:leading-8 text-[17px] lg:text-xl font-normal md:font-medium text-justify mt-4 lg:mt-8">
-            We enable logistics decarbonisation by aiming for
-            <b className="md:ml-2 text-justify">
-              carbon neutrality; supporting logistics transition solutions; and
-              maintaining a focus on energy efficiency.
-            </b>
-          </p>
+          {content}
           <div className="text-center mt-8">
             <a
               href="#"
