@@ -1,5 +1,4 @@
 import React from "react";
-import { BsArrow90DegDown, BsArrow90DegRight } from "react-icons/bs";
 
 function Hydrogen() {
   return (

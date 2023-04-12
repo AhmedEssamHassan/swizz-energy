@@ -1,5 +1,3 @@
-import { BsArrow90DegDown, BsArrow90DegRight } from "react-icons/bs";
-
 function GTC() {
   return (
     <section className="mt-0 container lg:px-14  pt-8">
@@ -22,20 +20,20 @@ function GTC() {
           follow-up with them to ensure the best quality of service and a
           project completion fulfilling the our customers’ expectations.
         </p>
-        <br />{" "}
+        <br />
         <p className="px-3 md:px-0 text-text-color leading-normal md:leading-8 text-[17px] lg:text-xl font-normal md:font-medium ">
           we are committed to promoting sustainable waste management
           best-practices and helping governments and organizations to find the
           optimal solution for their challenges.
         </p>
-        <br />{" "}
+        <br />
         <p className="px-3 md:px-0 text-text-color leading-normal md:leading-8 text-[17px] lg:text-xl font-normal md:font-medium ">
           We are dedicated to raising public awareness about the importance of
           transitioning from fossil fuels to sustainable energy sources. We aim
           to foster responsible behavior among individuals and encourage their
           active participation in promoting this critical initiative.
         </p>
-        <br />{" "}
+        <br />
         <p className="px-3 md:px-0 text-text-color leading-normal md:leading-8 text-[17px] lg:text-xl font-normal md:font-medium ">
           SEH and its customers are in a legal relationship. These General Terms
           and Conditions (GTC) apply to this relationship and regulate it,
@@ -43,7 +41,7 @@ function GTC() {
           SEH and ist partners or customers (Art. 13 Obligationsrecht - Swiss
           obligation Law).
         </p>
-        <br />{" "}
+        <br />
         <p className="px-3 md:px-0 text-text-color leading-normal md:leading-8 text-[17px] lg:text-xl font-normal md:font-medium ">
           By entering into contract negotiations or business relationships with
           SEH, the customer accepts these GTCs as binding terms. The GTCs are
@@ -61,18 +59,18 @@ function GTC() {
           specific properties. There is no guarantee of the accuracy and content
           of each advertising and sales document or the content of our website.
         </p>
-        <br />{" "}
+        <br />
         <p className="px-3 md:px-0 text-text-color leading-normal md:leading-8 text-[17px] lg:text-xl font-normal md:font-medium ">
           The prices mentioned in the offers of SEH are gross prices (including
           the swiss value-added tax) and are valid for 30 days unless other is
           stated.
         </p>
-        <br />{" "}
+        <br />
         <p className="px-3 md:px-0 text-text-color leading-normal md:leading-8 text-[17px] lg:text-xl font-normal md:font-medium ">
           Regarding property and copyright rights to offer documents, clause 6
           of these GTCs applies.
         </p>
-        <br />{" "}
+        <br />
         <p className="px-3 md:px-0 text-text-color leading-normal md:leading-8 text-[17px] lg:text-xl font-normal md:font-medium mb-2">
           Payment Terms
         </p>
@@ -81,7 +79,7 @@ function GTC() {
           each agreement. Any delayed payment should be settled within 30 days
           as of the invoice issuing date.
         </p>
-        <br />{" "}
+        <br />
         <p className="px-3 md:px-0 text-text-color leading-normal md:leading-8 text-[17px] lg:text-xl font-normal md:font-medium mb-2">
           After this period, SEH has the rights to charge reminder fees.
           <br /> If prices for services or components purchased by SEH increase

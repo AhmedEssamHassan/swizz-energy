@@ -3,7 +3,7 @@ import { Menu } from "antd";
 import logo from "../assets/swiss-logo.jpg";
 import { useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
-const items = [
+export const items = [
   {
     label: <NavLink to={"/energy"}>Energy</NavLink>,
     key: "energy",

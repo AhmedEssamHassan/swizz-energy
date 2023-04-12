@@ -57,10 +57,10 @@ function Recycling() {
           Basic waste management methods
         </h1>
         <p className="px-3 md:px-0 text-text-color leading-normal md:leading-8 text-[17px] lg:text-xl font-normal md:font-medium ">
-          <div className="xl:flex xl:justify-between xl:max-w-[40%] ">
+          <span className="xl:flex xl:justify-between xl:max-w-[40%] ">
             <span>Landfill</span> <span>Incineration</span>{" "}
             <span>Compaction</span> <span>Composting</span>
-          </div>
+          </span>
           <br />
           <span className="font-extrabold text-text-color">
             Waste segregation methods according to type of waste
