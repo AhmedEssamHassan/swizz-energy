@@ -98,5 +98,5 @@ function GTC() {
     </section>
   );
 }
-
+//
 export default GTC;
