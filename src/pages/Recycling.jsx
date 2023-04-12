@@ -67,7 +67,7 @@ function Recycling() {
           </span>
         </p>
         <br />
-        <div className="flex gap-4 flex-wrap justify-center md:justify-start ">
+        <div className="flex gap-4 flex-wrap justify-center lg:justify-start ">
           <div className="bg-[#E2F0D9] text-center p-3  min-w-[300px] mb-2 md:mb-0">
             <h4 className="font-bold text-base mb-1">Bio Degradable </h4>
             <ul>
