@@ -1,6 +1,9 @@
+import ScrollToTop from "../components/ScrollToTop";
+
 function GTC() {
   return (
     <section className="mt-0 container lg:px-14  pt-8">
+      <ScrollToTop />
       <div className="px-3 md:px-0 my-[100px] bg-white text-start">
         <h1 className="heading text-2xl text-center mb-10 bg-bg-color text-white sm:text-3xl font-bold py-5 md:py-10 xl:py-14 lg:text-3xl xl:text-5xl">
           GENERAL TERMS AND CONDITIONS

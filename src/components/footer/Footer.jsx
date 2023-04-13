@@ -12,7 +12,7 @@ function Footer() {
   const [isHover, setIsHover] = useState(false);
   return (
     <footer className="relative bg-[#333333] flex flex-col justify-center min-h-[100vh] items-center py-10">
-      <div className="social absolute flex flex-col left-0 bottom-20 px-5">
+      {/* <div className="social absolute flex flex-col left-0 bottom-20 px-5">
         <a className="cursor-pointer">
           <FaFacebookF className="mb-4 text-white text-[20px]" />
         </a>
@@ -28,15 +28,15 @@ function Footer() {
         <a className="cursor-pointer">
           <AiOutlineTwitter className="mb-4 text-white text-[20px]" />
         </a>
-      </div>
+      </div> */}
       <h3 className="text-[30px] md:text-[50px] text-center text-white">
-        swiss energy hub <br />{" "}
+        Energy Hub <br />{" "}
         <span className="tracking-[5px] text-[18px] md:text-[22] text-sm text-zinc-400">
           SWITZERLAND
         </span>
       </h3>
       <div
-        className="my-10 h-[167px]"
+        className="my-14 h-[167px]"
         onMouseOver={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
       >

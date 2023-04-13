@@ -4,8 +4,20 @@
 
   src: url("./fonts/Gotham\ Black\ Regular.ttf");
 }
+@font-face {
+  font-family: "larsseit-bold";
+  src: url("./fonts/Larsseit-Bold.otf");
+}
+@font-face {
+  font-family: "larsseit-medium";
+  src: url("./fonts/Larsseit-Medium.otf");
+}
+@font-face {
+  font-family: "larsseit-light";
+  src: url("./fonts/Larsseit-Light.otf");
+}
 body {
-  font-family: "Gotham-black", sans-serif;
+  font-family: "larsseit-medium", sans-serif !important;
 }
 * {
   margin: 0;
@@ -14,8 +26,10 @@ body {
 }
 h2.heading {
   position: relative;
+  border-bottom: 3px solid #c00000;
+  width: fit-content;
 }
-h2.heading::after {
+/* h2.heading::after {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -27,7 +41,7 @@ h2.heading::after {
   background: #eed484;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 ::-webkit-scrollbar {
   width: 5px;

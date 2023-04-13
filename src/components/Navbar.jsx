@@ -5,6 +5,10 @@ import { useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 export const items = [
   {
+    label: <NavLink to={"/"}>Home</NavLink>,
+    key: "home",
+  },
+  {
     label: <NavLink to={"/energy"}>Energy</NavLink>,
     key: "energy",
   },
@@ -21,7 +25,7 @@ export const items = [
     key: "hydrogen",
   },
   {
-    label: <NavLink to={"/knowledge"}>knowledge</NavLink>,
+    label: <NavLink to={"/knowledge"}>Knowledge</NavLink>,
     key: "knowledge",
   },
   {
@@ -49,7 +53,7 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
 			border: none !important;
 		}
     nav ul li{
-      font-size:15px !important;
+      font-size:18px !important;
       font-weight: 600
     }
     .ant-menu-item-selected::after{
@@ -58,9 +62,15 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
     .ant-menu-item-selected{
       color:#C00000 !important;
     }
+    @media (max-width: 1279px) {
+      nav ul li{
+        font-size:14px !important;
+      }    
+    }
     @media (max-width: 1023px) {
       nav ul li{
         font-size:14px !important;
+        padding-inline: 10px !important;
       }    
     }
     
@@ -84,8 +94,12 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
           {/* <Link className="text-[#c00000] text-2xl font-bold" to={"/"}>
             swiss energy hub
           </Link> */}
-          <Link className="swiss energy hub" to={"/"}>
-            <img width={150} height="60" src={logo} title="" alt="logo" />
+          <Link
+            className="text-2xl text-bg-color font-bold swiss energy hub"
+            to={"/"}
+          >
+            {/* <img width={150} height="60" src={logo} title="" alt="logo" /> */}
+            <p>swiss energy hub</p>
           </Link>
           <div className="flex justify-center items-center">
             {screenWidth > 767 && (

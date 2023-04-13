@@ -40,12 +40,15 @@ const Main_section = ({ reverse, title, content }) => {
             className="h-[100%] w-[100%]  object-cover "
           />
         </div>
-        <div className="info  max-w-[90%] md:max-w-[85%] lg:max-w-[75%]  mx-auto  md:pb-12   ">
-          <h2 className="heading  text-2xl  sm:text-3xl  text-white md:text-text-color font-bold text-center mb-5  py-5 md:py-10 xl:py-14 lg:text-3xl xl:text-5xl ">
+        <div className="info  max-w-[90%] md:max-w-[85%] lg:max-w-[75%] flex flex-col justify-center items-center mx-auto  md:py-7   ">
+          <h2
+            style={{ lineHeight: "5px !important" }}
+            className="heading text-white md:text-text-color font-bold text-center mb-3  py-3 text-xl "
+          >
             {title}
           </h2>
           {content}
-          <div className="text-center mt-8">
+          {/* <div className="text-center mt-8">
             <a
               href="#"
               className="no-underline gap-1 bg-main-color  rounded-full   mb-4 flex  items-center justify-center w-[165px] md:w-[220px]  mx-auto hover:bg-white  border-main-color  border-[3px] font-medium  text-base h-[45px] md:h-[50px]"
@@ -55,7 +58,7 @@ const Main_section = ({ reverse, title, content }) => {
               </b>
               Read more
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
