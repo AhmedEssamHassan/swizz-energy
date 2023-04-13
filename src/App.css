@@ -17,7 +17,7 @@
   src: url("./fonts/Larsseit-Light.otf");
 }
 body {
-  font-family: "larsseit-medium", sans-serif !important;
+  font-family: "larsseit-medium", sans-serif ;
 }
 * {
   margin: 0;

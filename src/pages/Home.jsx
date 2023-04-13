@@ -4,6 +4,7 @@ import video from "../assets/Video_Energy_80MB.mp4";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import ScrollToTop from "../components/ScrollToTop";
+import { InfoCircleFilled, QuestionCircleOutlined } from "@ant-design/icons";
 function Home() {
   return (
     <div>
@@ -32,15 +33,6 @@ function Home() {
             </h1>
           </div>
         </div>
-        <a
-          href="https://calendly.com/swissenergyhub"
-          target={"_blank"}
-          className="  fixed z-30 top-[50%] translate-y-[-50%] -right-[50px] sm:-right-[55px] lg:-right-[77px]   font-bold text-base tracking-[1px]
-           bg-bg-color text-white w-[135px]  sm:w-[160px] lg:w-[200px] flex items-center justify-center sm:h-[50px] h-[35px] 
-            -rotate-90"
-        >
-          Let's talk
-        </a>
       </header>
       {/* <Main_home /> */}
     </div>

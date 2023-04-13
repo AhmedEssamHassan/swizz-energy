@@ -17,6 +17,7 @@ import Knowledge from "./pages/Knowledge";
 import Vision from "./pages/Vision";
 import Mission from "./pages/Mission";
 import GTC from "./pages/GTC";
+import { QuestionCircleOutlined } from "@ant-design/icons";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -60,6 +61,13 @@ function App() {
   return (
     <>
       <Cursor color="#fff" ringSize={"20px"} cursorSize="5px" />
+      <a
+        href="https://calendly.com/swissenergyhub"
+        target={"_blank"}
+        className="  fixed z-30 bottom-3 right-3 px-3 py-2 rounded-[20px] text-base tracking-[1px] bg-gray-500 text-white w-fit flex items-center justify-center"
+      >
+        <QuestionCircleOutlined className="mr-2" /> <p> Let's talk </p>
+      </a>
       <div className="App max-w-[100vw] overflow-hidden">
         <ProgressBar color="#972A17" gradient={true} height={5} />
         {screenWidth > 767 ? (

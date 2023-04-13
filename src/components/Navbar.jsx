@@ -53,8 +53,10 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
 			border: none !important;
 		}
     nav ul li{
-      font-size:18px !important;
+      font-family: "Gotham-black", sans-serif !important;
+      font-size:15px !important;
       font-weight: 600
+      letter-spacing: 3px !important
     }
     .ant-menu-item-selected::after{
       border-bottom-color:#C00000 !important;
@@ -64,7 +66,8 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
     }
     @media (max-width: 1279px) {
       nav ul li{
-        font-size:14px !important;
+        font-size:12px !important;
+        letter-spacing: 2px !important;
       }    
     }
     @media (max-width: 1023px) {
