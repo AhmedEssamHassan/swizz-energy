@@ -104,7 +104,7 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
         </div>
 
         <div className="navbar_inner   flex justify-between">
-          <Link to="/">
+          <Link to="/" className="relative z-10">
             <img src={logo} alt="logo" width={85} />
           </Link>
           <div className="sidebar-container z-50" onClick={activeHandler}>
@@ -147,7 +147,7 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
             <li className="flex gap-3 items-center text-sm text-[#333] mb-2">
               <IoLocationSharp
                 style={{
-                  fontSize: "25px",
+                  fontSize: "20px",
                   color: "#555",
                 }}
               />
@@ -160,7 +160,7 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
               >
                 <BsTelephoneFill
                   style={{
-                    fontSize: "18px",
+                    fontSize: "16px",
                   }}
                 />
                 +41 44 589 70 55
@@ -173,7 +173,7 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
               >
                 <IoIosMail
                   style={{
-                    fontSize: "20px",
+                    fontSize: "17px",
                   }}
                 />
                 info@swissenergyhub.com
