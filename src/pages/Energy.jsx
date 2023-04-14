@@ -9,26 +9,23 @@ function Energy() {
     <>
       <style>
         {`
-      .img-header{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        object-fit: cover;
-      }
+       .img-header{
+     
+         object-fit: cover;
+min-height:100vh     
+
+
+       }
 
       @media (max-width: 767px) {
         .img-header{
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          object-fit: cover;
+          min-height: 100%
+
         }
       }
       `}
       </style>
-      <header className="relative h-[50vh] lg:h-[100vh] w-full overflow-hidden">
+      <header className="relative h-[50vh] md:h-[100vh] w-full overflow-hidden">
         <img className="img-header" src={train_img} />
         <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
           <div className="font-extrabold absolute bottom-0">
@@ -38,7 +35,7 @@ function Energy() {
                 fontWeight: "900",
                 letterSpacing: "3px",
               }}
-              className="text-lg md:text-3xl text-center mb-16 text-white px-5 bg-[#8080807a] rounded-lg py-5 "
+              className="text-[13px] md:text-3xl text-center mb-16 text-white px-5 bg-[#8080807a] rounded-lg py-5 "
             >
               THE POWER OF STEAM
             </h1>
