@@ -64,13 +64,13 @@ function App() {
       <a
         href="https://calendly.com/swissenergyhub"
         target={"_blank"}
-        className="  fixed z-30 bottom-3 right-3 px-3 py-2 rounded-[20px] text-base tracking-[1px] bg-gray-500 text-white w-fit flex items-center justify-center"
+        className="fixed z-30 bottom-3 right-3 px-5 py-2 rounded-[20px] text-base tracking-[1px] bg-gray-500 text-white w-fit flex items-center justify-center"
       >
-        <QuestionCircleOutlined className="mr-2" /> <p> Let's talk </p>
+        <p className="text-[12px] font-bold"> Let's Talk </p>
       </a>
       <div className="App max-w-[100vw] overflow-hidden">
         <ProgressBar color="#972A17" gradient={true} height={5} />
-        {screenWidth > 767 ? (
+        {screenWidth > 1024 ? (
           <Navbar
             scrollPosition={scrollPosition}
             navbarColor={navbarColor}

@@ -36,7 +36,7 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
     <nav
       className=" h-[100px] px] md:mx-0  flex items-center fixed w-[100%] z-20 "
       style={{
-        backgroundColor: screenWidth <= 767 ? navbarColor : "transparent",
+        backgroundColor: screenWidth <= 222 ? navbarColor : "#222",
         transition: "all .3s ease-in",
         boxShadow:
           screenWidth <= 767
@@ -104,12 +104,20 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
         </div>
 
         <div className="navbar_inner   flex justify-between">
-          <Link to="/" className="relative z-10">
-            <img src={logo} alt="logo" width={85} />
+          <Link
+            style={{
+              fontFamily: "larsseit-medium",
+              letterSpacing: "1.5px",
+            }}
+            className="mt-2 text-2xl text-bg-color font-bold swiss energy hub"
+            to={"/"}
+          >
+            {/* <img width={150} height="60" src={logo} title="" alt="logo" /> */}
+            <p>swiss energy hub</p>
           </Link>
           <div className="sidebar-container z-50" onClick={activeHandler}>
             <button
-              className={`hamburger-menu flex flex-col gap-2 outline-0 ${
+              className={`hamburger-menu flex flex-col gap-2 outline-0 mr-3 ${
                 menuActive && "translate-y-2"
               }
               transition-all delay-[2000]}

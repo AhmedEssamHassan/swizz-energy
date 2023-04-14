@@ -8,7 +8,7 @@ function Knowledge() {
     <section className="mt-0 container lg:px-14  pt-8">
       <ScrollToTop />
       <div className="px-3 md:px-0 my-[100px] bg-white text-start">
-        <h1 className="text-2xl text-center mb-5 text-black border-0 border-b-2 border-b-black font-semibold py-5 ">
+        <h1 className="text-2xl text-center mb-5 text-black  font-semibold py-5 ">
           Knowledge Base
         </h1>
         <div className="flex items-baseline">
@@ -61,7 +61,23 @@ function Knowledge() {
             ppm).
           </p>
         </div>
-        <MyChart />
+        <div className="my-8 flex flex-wrap justify-around items-center">
+          <div className="w-full flex justify-center items-center md:w-[47%]">
+            <MyChart />
+          </div>
+          <div className="w-full flex justify-center items-center md:w-[47%]">
+            <div className="flex items-baseline">
+              <ArrowRightOutlined className="text-bg-color mr-2" />
+              <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
+                burning of fossil fuels for energy is the largest contributor to
+                global carbon dioxide emissions, accounting for around 75%-85%
+                of total emissions, mainly used for Industry, heat + electricity
+                + transportation Fossil fuel use created 33.2 billion tons of
+                carbon dioxide emissions in 2011 worldwide
+              </p>
+            </div>
+          </div>
+        </div>
         <div className="flex items-baseline">
           <ArrowRightOutlined className="text-bg-color mr-2" />
           <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">

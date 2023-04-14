@@ -43,7 +43,7 @@ const Main_section = ({ reverse, title, content }) => {
         <div className="info  max-w-[90%] md:max-w-[85%] lg:max-w-[75%] flex flex-col justify-center items-center mx-auto  md:py-7   ">
           <h2
             style={{ lineHeight: "5px !important" }}
-            className="heading text-white md:text-text-color font-bold text-center mb-3  py-3 text-xl "
+            className="heading text-white md:text-text-color font-bold text-center mb-11  py-3 text-xl "
           >
             {title}
           </h2>

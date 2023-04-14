@@ -5,7 +5,7 @@ function Pellets() {
     <section className="mt-0 container lg:px-14  pt-8">
       <ScrollToTop />
       <div className="px-3 md:px-0 my-[100px] bg-white text-start">
-        <h1 className="text-2xl text-center mb-5 text-black border-0 border-b-2 border-b-black font-semibold py-5 ">
+        <h1 className="text-2xl text-center mb-5 text-black  font-semibold py-5 ">
           PELLETS
         </h1>
         <p className="leading-10 px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
@@ -35,7 +35,7 @@ function Pellets() {
           fuels and other non-renewable resources.
         </p>
 
-        <h1 className="text-2xl text-center mb-5 text-black border-0 border-b-2 border-b-black font-semibold py-5 ">
+        <h1 className="text-2xl text-center mb-5 text-black  font-semibold py-5 ">
           Our strategy
         </h1>
         <p className="leading-10 px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">

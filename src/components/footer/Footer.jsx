@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   const [isHover, setIsHover] = useState(false);
   return (
-    <footer className="relative bg-[#333333] flex flex-col justify-center min-h-[100vh] items-center py-10">
+    <footer className="relative bg-[#333333] flex flex-col justify-around min-h-[calc(100vh-100px)] items-center py-10">
       {/* <div className="social absolute flex flex-col left-0 bottom-20 px-5">
         <a className="cursor-pointer">
           <FaFacebookF className="mb-4 text-white text-[20px]" />
@@ -29,12 +29,18 @@ function Footer() {
           <AiOutlineTwitter className="mb-4 text-white text-[20px]" />
         </a>
       </div> */}
-      <h3 className="text-[30px] md:text-[50px] text-center text-white">
-        Energy Hub <br />{" "}
-        <span className="tracking-[5px] text-[18px] md:text-[22] text-sm text-zinc-400">
-          SWITZERLAND
-        </span>
+      <h3
+        style={{
+          fontFamily: "larsseit-medium",
+          letterSpacing: "1.5px",
+        }}
+        className="text-[26px] text-center font-bold text-white"
+      >
+        swiss energy hub <br />{" "}
       </h3>
+      <span className="tracking-[5px] text-[18px] md:text-[22] text-sm text-zinc-400">
+        SWITZERLAND
+      </span>
       <div
         className="my-14 h-[167px]"
         onMouseOver={() => setIsHover(true)}
@@ -59,40 +65,53 @@ function Footer() {
           />
         </svg> */}
       </div>
-      <div className="text-white contacts container mx-auto flex flex-col md:flex-row justify-around">
+      <div className="mt-30px text-white contacts container mx-auto flex flex-col md:flex-row justify-around">
         <div className="flex flex-col justify-start items-center mb-10 md:mb-0">
           <IoLocationSharp
-            style={{ fontSize: "25px", color: "white", marginBottom: "10px" }}
+            style={{ fontSize: "25px", color: "white", marginBottom: "20px" }}
           />
           <a>
-            <p className="text-[18px] text-center">Tannenstrasse 16</p>
+            <p className=" contact-text text-[14px] font-[600] text-center">
+              Tannenstrasse 16
+            </p>
 
-            <p className="text-[18px] text-center">8424 Embrach ZH</p>
-            <p className="text-[18px] text-center">Switzerland</p>
+            <p className=" contact-text text-[14px] font-[600] text-center">
+              8424 Embrach ZH
+            </p>
+            <p className=" contact-text text-[14px] font-[600] text-center">
+              Switzerland
+            </p>
           </a>
         </div>
         <div className="flex flex-col justify-start items-center mb-10 md:mb-0">
           <BsTelephoneFill
-            style={{ fontSize: "22px", color: "white", marginBottom: "10px" }}
+            style={{ fontSize: "22px", color: "white", marginBottom: "20px" }}
           />
           <a>
-            <p className="text-[18px] whitespace-nowrap text-center">
+            <p className=" contact-text text-[14px] font-[600] whitespace-nowrap text-center">
               +41 44 589 70 55
             </p>
 
-            <p className="text-[18px] whitespace-nowrap text-center">
+            <p className=" contact-text text-[14px] font-[600] whitespace-nowrap text-center">
               Mo - Fr 09:00 - 17:00
             </p>
           </a>
         </div>
         <div className="flex flex-col justify-start items-center mb-10 md:mb-0">
           <IoIosMail
-            style={{ fontSize: "25px", color: "white", marginBottom: "10px" }}
+            style={{ fontSize: "25px", color: "white", marginBottom: "20px" }}
           />
-          <p className="text-[18px] text-center">info@swissenergyhub.com</p>
+          <p className=" contact-text text-[14px] font-[600] text-center">
+            info@swissenergyhub.com
+          </p>
 
-          <p className="text-[18px] text-center">www.swissenergyhub.com</p>
-          <Link to="gtc" className="text-[18px] text-center cursor-pointer">
+          <p className=" contact-text text-[14px] font-[600] text-center">
+            www.swissenergyhub.com
+          </p>
+          <Link
+            to="gtc"
+            className=" contact-text text-[14px] font-[600] text-center cursor-pointer"
+          >
             GTC
           </Link>
         </div>

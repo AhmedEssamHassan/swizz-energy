@@ -53,7 +53,9 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
 			border: none !important;
 		}
     nav ul li{
-      font-family: "Gotham-black", sans-serif !important;
+      // font-family: "Gotham-black", sans-serif !important;
+      font-family: "Open Sans", sans-serif;
+
       font-size:15px !important;
       font-weight: 600
       letter-spacing: 3px !important
@@ -66,16 +68,12 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
     }
     @media (max-width: 1279px) {
       nav ul li{
-        font-size:12px !important;
+        font-size:15px !important;
         letter-spacing: 2px !important;
+        padding-inline: 6px !important;
       }    
     }
-    @media (max-width: 1023px) {
-      nav ul li{
-        font-size:14px !important;
-        padding-inline: 10px !important;
-      }    
-    }
+   
     
     
 		`}
@@ -98,6 +96,10 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
             swiss energy hub
           </Link> */}
           <Link
+            style={{
+              fontFamily: "larsseit-medium",
+              letterSpacing: "1.5px",
+            }}
             className="text-2xl text-bg-color font-bold swiss energy hub"
             to={"/"}
           >
