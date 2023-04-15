@@ -2,7 +2,7 @@ import { RightOutlined } from "@ant-design/icons";
 import { Parallax } from "react-scroll-parallax";
 import img from "../../assets/img-2.jpg";
 
-const Main_section = ({ reverse, title, content }) => {
+const Main_section = ({ reverse, title, content, imgSrc }) => {
   return (
     <>
       <style jsx="true">
@@ -10,7 +10,7 @@ const Main_section = ({ reverse, title, content }) => {
           @media (max-width: 767px) {
             .main_section {
               position: relative;
-              background-image: url(../${img});
+              background-image: url(../${imgSrc});
               z-index: 1;
               background-repeat: no-repeat;
               background-size: cover;
@@ -35,7 +35,7 @@ const Main_section = ({ reverse, title, content }) => {
           } `}
         >
           <img
-            src={img}
+            src={imgSrc}
             alt="img"
             className="h-[100%] w-[100%]  object-cover "
           />
