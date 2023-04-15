@@ -68,8 +68,20 @@ h2.heading::after {
   position: absolute;
   bottom: -14px;
   height: 4px;
-  width: 80%;
+  width: 50px;
   /* min-width: 62px; */
+  margin: auto;
+  border-radius: 40px;
+  background: #c00000;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.page-title::after {
+  content: "";
+  position: absolute;
+  bottom: -170px;
+  height: 4px;
+  width: 50px;
   margin: auto;
   border-radius: 40px;
   background: #c00000;

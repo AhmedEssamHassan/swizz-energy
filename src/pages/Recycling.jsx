@@ -10,7 +10,7 @@ function Recycling() {
         {`
           th,
           td {
-            border: 1px solid #dddddd;
+            // border: 1px solid #dddddd;
             text-align: center;
             padding: 8px;
           }
@@ -20,13 +20,23 @@ function Recycling() {
               color: #fff;
             }
           }
+          .img-header {
+            object-fit: cover;
+            min-height: 100vh;
+          }
+
+          @media (max-width: 767px) {
+            .img-header {
+              min-height: 100%;
+            }
+          }
         `}
       </style>
 
-      <header className="relative h-[50vh] md:h-[100vh] w-full overflow-hidden">
+      <header className="relative border border-red-600 h-[50vh] md:h-[100vh] w-full overflow-hidden">
         <img className="img-header" src={img} />
         <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
-          <div className="font-extrabold absolute bottom-0">
+          {/* <div className="font-extrabold absolute bottom-0">
             <h1
               style={{
                 fontFamily: "Montserrat",
@@ -37,18 +47,20 @@ function Recycling() {
             >
               Recycling & waste management
             </h1>
-          </div>
+          </div> */}
         </div>
       </header>
 
-      <section className="mt-0 pt-8">
+      <section className="mt-0">
         <ScrollToTop />
-        <div className="my-[100px] bg-white text-center">
-          {/* <h1 className="text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
-            Recycling & waste management
-          </h1> */}
+        <div className=" bg-white text-center">
+          <div className="flex justify-center my-[60px]">
+            <h1 className="page-title tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
+              THE POWER OF WASTE
+            </h1>
+          </div>
           <div className="px-4 mt-9 w-full md:w-[80Vw] lg:w-[60vw] text-justify md:text-justify flex mx-auto lg:px-14">
-            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal md:font-medium md:font-medi text-startumd:m mb-16">
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] mb-16">
               We are passionate about alternative energy resources through waste
               management and the critical role it plays in reducing our our
               dependence on fossil fuels and mitigating the impacts of climate
@@ -89,18 +101,18 @@ function Recycling() {
                 Simple ways to practise waste segregation
               </h1>
               <ul className="pl-[20px] list-disc">
-                <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal md:font-medium mb-2">
+                <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                   Keep separate containers for dry and wet waste in the kitchen.
                 </li>
-                <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal md:font-medium mb-2">
+                <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                   Keep two bags for dry waste collection- paper and plastic, for
                   the rest of the household waste.
                 </li>
-                <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal md:font-medium mb-2">
+                <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                   Keep plastic from the kitchen clean and dry and drop into the
                   dry waste bin.
                 </li>
-                <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal md:font-medium mb-2">
+                <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                   {" "}
                   Send wet waste out of your home daily.
                 </li>
@@ -177,7 +189,7 @@ function Recycling() {
               </table>
             </>
           }
-          title=""
+          title="Waste could be:"
           reverse={false}
           imgSrc={samara}
         />

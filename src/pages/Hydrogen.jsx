@@ -27,7 +27,7 @@ min-height:100vh
       <header className="relative h-[50vh] md:h-[100vh] w-full overflow-hidden">
         <img className="img-header" src={hydrogen} />
         <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
-          <div className="font-extrabold absolute bottom-0">
+          {/* <div className="font-extrabold absolute bottom-0">
             <h1
               style={{
                 fontFamily: "Montserrat",
@@ -36,16 +36,21 @@ min-height:100vh
               }}
               className="text-[13px] md:text-3xl text-center mb-16 text-white px-5 bg-[#8080807a] rounded-lg py-5 "
             >
-              PELLETS
+              THE POWER OF HYDROGEN
             </h1>
-          </div>
+          </div> */}
         </div>
       </header>
       <section className="mt-0 container lg:px-14  flex justify-center">
         <ScrollToTop />
-        <div className="px-4 lg:px-14 md:px-0 mb-6 lg:my-[100px] md:w-[80Vw] lg:w-[60vw] bg-white text-start">
+        <div className="px-4 lg:px-14 md:px-0 mb-6 md:w-[80Vw] lg:w-[60vw] bg-white text-start">
+          <div className="flex justify-center my-[60px]">
+            <h1 className="page-title tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
+              THE POWER OF HYDROGEN
+            </h1>
+          </div>
           <div className="">
-            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal md:font-medium md:font-medi text-justify ">
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
               Hydrogen gas is a clean and renewable source of energy that could
               replace fossil fuels in a wide range of applications, from
               transportation to power generation. One of the most promising
@@ -74,7 +79,7 @@ min-height:100vh
       <header className="relative h-[50vh] md:h-[100vh] w-full overflow-hidden">
         <img className="img-header" src={green} />
         <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
-          <div className="font-extrabold absolute bottom-0">
+          {/* <div className="font-extrabold absolute bottom-0">
             <h1
               style={{
                 fontFamily: "Montserrat",
@@ -85,13 +90,18 @@ min-height:100vh
             >
               OUR STRATEGY
             </h1>
-          </div>
+          </div> */}
         </div>
       </header>
       <section className="mt-0 container lg:px-14  flex justify-center">
-        <div className="px-4 lg:px-14 md:px-0 mb-6 lg:my-[100px] md:w-[80Vw] lg:w-[60vw] bg-white text-start">
+        <div className="px-4 lg:px-14 md:px-0 mb-6 my-10 md:w-[80Vw] lg:w-[60vw] bg-white text-start">
+          {/* <div className="flex justify-center my-[60px]">
+            <h1 className="page-title tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
+              THE POWER OF HYDROGEN
+            </h1>
+          </div> */}
           <div className="">
-            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal md:font-medium md:font-medi text-justify ">
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
               There are still some challenges to go through in order to have
               hydrogen usage becoming very popular, mainly the safety issues:
               <ul className="list-disc ml-5">

@@ -27,7 +27,7 @@ min-height:100vh
       <header className="relative h-[50vh] md:h-[100vh] w-full overflow-hidden">
         <img className="img-header" src={PELLET} />
         <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
-          <div className="font-extrabold absolute bottom-0">
+          {/* <div className="font-extrabold absolute bottom-0">
             <h1
               style={{
                 fontFamily: "Montserrat",
@@ -38,14 +38,19 @@ min-height:100vh
             >
               PELLETS
             </h1>
-          </div>
+          </div> */}
         </div>
       </header>
       <section className="mt-0 container lg:px-14  flex justify-center">
         <ScrollToTop />
-        <div className="px-4 lg:px-14 md:px-0 mb-6 lg:my-[100px] md:w-[80Vw] lg:w-[60vw] bg-white text-start">
+        <div className="px-4 lg:px-14 md:px-0 mb-6 md:w-[80Vw] lg:w-[60vw] bg-white text-start">
+          <div className="flex justify-center my-[60px]">
+            <h1 className="page-title tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
+              THE POWER OF BIOMASS
+            </h1>
+          </div>
           <div className="">
-            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal md:font-medium md:font-medi text-justify ">
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
               Energy crops are plants which are produced with the express
               purpose of using their biomass energetically and at the same time
               reduce carbon dioxide emission level in the atmosphere. Biofuels
@@ -69,7 +74,7 @@ min-height:100vh
           </div>
         </div>
       </section>
-      <header className="relative h-[50vh] md:h-[100vh] w-full overflow-hidden">
+      <header className="relative h-[50vh] md:h-[100vh] my-10 w-full overflow-hidden">
         <img className="img-header" src={pampoo} />
         <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
           <div className="font-extrabold absolute bottom-0">
@@ -87,9 +92,14 @@ min-height:100vh
         </div>
       </header>
       <section className="mt-0 container lg:px-14  flex justify-center">
-        <div className="px-4 lg:px-14 md:px-0 mb-6 lg:my-[100px] md:w-[80Vw] lg:w-[60vw] bg-white text-start">
+        <div className="px-4 lg:px-14 md:px-0 mb-6 md:w-[80Vw] lg:w-[60vw] bg-white text-start">
+          {/* <div className="flex justify-center my-[60px]">
+            <h1 className="page-title tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
+              THE POWER OF BIOMASS
+            </h1>
+          </div> */}
           <div className="">
-            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal md:font-medium md:font-medi text-justify ">
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
               Our strategy revolves around the cultivation of Energy crops in
               warm regions like North Africa, utilize treated wastewater to
               establish a closed-loop system for energy production. produce
@@ -104,7 +114,7 @@ min-height:100vh
               as well boosting the African countries’ economy, create job
               opportunities aiming for a win-win-situation for all.
             </p>
-            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal md:font-medium md:font-medi text-justify ">
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
               Here are some of its advantages: 4 times more CO2 capturing
               Wastewater irrigation 6 months short Lifecycle Bamboos’ dryness of
               8.5% saves additional processing steps in pellet production
@@ -114,7 +124,7 @@ min-height:100vh
               which is used fertilizers, cements We are eligible for getting
               carbon credits which will be invested in optimizing our process
             </p>
-            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal md:font-medium md:font-medi text-justify ">
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
               Here are some of its advantages:
               <ul className="list-disc ml-5">
                 <li>4 times more CO2 capturing</li>
@@ -140,7 +150,7 @@ min-height:100vh
                 </li>
               </ul>
             </p>
-            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal md:font-medium md:font-medi text-justify ">
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
               Waste to needs Loop: To Live we need a drop of water (waterdrop
               image) To Live we need energy (Lamp image) To Live we produce
               carbon, garbage & wastewater (input/output image) The optimum
