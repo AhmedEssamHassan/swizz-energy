@@ -35,7 +35,7 @@ min-height:100vh
               }}
               className="text-[13px] md:text-3xl text-center mb-16 text-white px-5 bg-[#8080807a] rounded-lg py-5 "
             >
-              THE POWER OF STEAM
+              PELLETS
             </h1>
           </div>
         </div>
@@ -65,9 +65,23 @@ min-height:100vh
               environment by reducing the use of fossil fuels and other
               non-renewable resources.
             </p>
-            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal md:font-medium md:font-medi text-justify ">
-              Our strategy:
-            </p>
+            <header className="relative h-[50vh] md:h-[100vh] w-full overflow-hidden">
+              <img className="img-header" src={PELLET} />
+              <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
+                <div className="font-extrabold absolute bottom-0">
+                  <h1
+                    style={{
+                      fontFamily: "Montserrat",
+                      fontWeight: "900",
+                      letterSpacing: "3px",
+                    }}
+                    className="text-[13px] md:text-3xl text-center mb-16 text-white px-5 bg-[#8080807a] rounded-lg py-5 "
+                  >
+                    PELLETS
+                  </h1>
+                </div>
+              </div>
+            </header>
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal md:font-medium md:font-medi text-justify ">
               Our strategy revolves around the cultivation of Energy crops in
               warm regions like North Africa, utilize treated wastewater to
