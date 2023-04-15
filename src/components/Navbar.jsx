@@ -94,15 +94,15 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
       // font-family: "Gotham-black", sans-serif !important;
       font-family: "Open Sans", sans-serif;
 
-      font-size:15px !important;
-      font-weight: 600
-      letter-spacing: 3px !important
+      font-size:16px !important;
+      font-weight: 600 !important;
+      letter-spacing: 1px !important
     }
     .ant-menu-item-selected::after, .ant-menu-light.ant-menu-horizontal >.ant-menu-item-active::after{
       border-bottom-color:#C00000 !important;
     }
     .ant-menu-item-selected{
-      color:#C00000 !important;
+      color:black !important;
     }
     @media (max-width: 1279px) {
       nav ul li{
@@ -113,7 +113,7 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
     }
 
     nav .active {
-      color:#C00000 !important;
+      // color:#C00000 !important;
     }
    
     
