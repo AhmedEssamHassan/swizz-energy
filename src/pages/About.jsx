@@ -3,6 +3,7 @@ import Main_section from "../components/main-home/Main_section";
 import Secondary_section from "../components/main-home/Secondary_section";
 import team from "../assets/Team.jpg";
 import ScrollToTop from "../components/ScrollToTop";
+import samara from "../assets/SAMARA-min.jpg";
 
 function WhoWeAre() {
   return (
@@ -79,6 +80,7 @@ function WhoWeAre() {
           }
           title="Vision"
           reverse={false}
+          imgSrc={samara}
         />
         <Main_section
           content={
@@ -111,6 +113,7 @@ function WhoWeAre() {
           }
           reverse={true}
           title="Mission"
+          imgSrc={samara}
         />
         {/* <Secondary_section /> */}
       </section>
