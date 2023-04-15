@@ -37,11 +37,7 @@ const menuItems = [
 
 export const items = menuItems.map((item) => {
   return {
-    label: (
-      <NavLink activeClassName="active" to={item.path}>
-        {item.label}
-      </NavLink>
-    ),
+    label: <NavLink to={item.path}>{item.label}</NavLink>,
     key: item.path,
   };
 });

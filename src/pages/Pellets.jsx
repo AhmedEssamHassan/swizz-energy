@@ -8,17 +8,13 @@ function Pellets() {
       <style>
         {`
        .img-header{
-     
-         object-fit: cover;
-min-height:100vh     
-
-
+          object-fit: cover;
+          min-height:100vh     
        }
 
       @media (max-width: 767px) {
         .img-header{
           min-height: 100%
-
         }
       }
       `}

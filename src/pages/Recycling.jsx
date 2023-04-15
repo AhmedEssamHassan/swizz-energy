@@ -101,7 +101,6 @@ function Recycling() {
                   dry waste bin.
                 </li>
                 <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal md:font-medium mb-2">
-                  {" "}
                   Send wet waste out of your home daily.
                 </li>
               </ul>

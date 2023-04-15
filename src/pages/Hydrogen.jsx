@@ -91,7 +91,7 @@ min-height:100vh
       <section className="mt-0 container lg:px-14  flex justify-center">
         <div className="px-4 lg:px-14 md:px-0 mb-6 lg:my-[100px] md:w-[80Vw] lg:w-[60vw] bg-white text-start">
           <div className="">
-            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal md:font-medium md:font-medi text-justify ">
+            <div className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal md:font-medium md:font-medi text-justify ">
               There are still some challenges to go through in order to have
               hydrogen usage becoming very popular, mainly the safety issues:
               <ul className="list-disc ml-5">
@@ -112,7 +112,7 @@ min-height:100vh
               applied. By optimizing the efficiency of the electrolysis process,
               and the safety challenges we could reduce our dependence on fossil
               fuels and contribute to a more sustainable future.
-            </p>
+            </div>
           </div>
         </div>
       </section>
