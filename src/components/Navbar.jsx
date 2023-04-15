@@ -3,36 +3,78 @@ import { Menu } from "antd";
 import logo from "../assets/swiss-logo.jpg";
 import { useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
-export const items = [
+
+const menuItems = [
   {
-    label: <NavLink to={"/"}>Home</NavLink>,
-    key: "home",
+    path: "/",
+    label: "Home",
   },
   {
-    label: <NavLink to={"/energy"}>Energy</NavLink>,
-    key: "energy",
+    path: "/recycling",
+    label: "Recycling",
   },
   {
-    label: <NavLink to={"/recycling"}>Recycling</NavLink>,
-    key: "recycling",
+    path: "/energy",
+    label: "Energy",
   },
   {
-    label: <NavLink to={"/pellets"}>Pellets</NavLink>,
-    key: "pellets",
+    path: "/hydrogen",
+    label: "Hydrogen",
   },
   {
-    label: <NavLink to={"/hydrogen"}>Hydrogen</NavLink>,
-    key: "hydrogen",
+    path: "/pellets",
+    label: "Pellets",
   },
   {
-    label: <NavLink to={"/knowledge"}>Knowledge</NavLink>,
-    key: "knowledge",
+    path: "/about",
+    label: "About",
   },
   {
-    label: <NavLink to={"/about"}>About us</NavLink>,
-    key: "about",
+    path: "/knowledge",
+    label: "Knowledge",
   },
 ];
+
+export const items = menuItems.map((item) => {
+  return {
+    label: (
+      <NavLink activeClassName="active" to={item.path}>
+        {item.label}
+      </NavLink>
+    ),
+    key: item.path,
+  };
+});
+// [
+//   {
+//     label: <NavLink to={"/"}>Home</NavLink>,
+//     key: "home",
+//   },
+//   {
+//     label: <NavLink to={"/energy"}>Energy</NavLink>,
+//     key: "energy",
+//   },
+//   {
+//     label: <NavLink to={"/recycling"}>Recycling</NavLink>,
+//     key: "recycling",
+//   },
+//   {
+//     label: <NavLink to={"/pellets"}>Pellets</NavLink>,
+//     key: "pellets",
+//   },
+//   {
+//     label: <NavLink to={"/hydrogen"}>Hydrogen</NavLink>,
+//     key: "hydrogen",
+//   },
+//   {
+//     label: <NavLink to={"/knowledge"}>Knowledge</NavLink>,
+//     key: "knowledge",
+//   },
+//   {
+//     label: <NavLink to={"/about"}>About us</NavLink>,
+//     key: "about",
+//   },
+// ];
 
 function Navbar({ screenWidth, navbarColor, scrollPosition }) {
   console.log({ screenWidth });
@@ -60,7 +102,7 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
       font-weight: 600
       letter-spacing: 3px !important
     }
-    .ant-menu-item-selected::after{
+    .ant-menu-item-selected::after, .ant-menu-light.ant-menu-horizontal >.ant-menu-item-active::after{
       border-bottom-color:#C00000 !important;
     }
     .ant-menu-item-selected{
@@ -72,6 +114,10 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
         letter-spacing: 2px !important;
         padding-inline: 6px !important;
       }    
+    }
+
+    nav .active {
+      color:#C00000 !important;
     }
    
     
