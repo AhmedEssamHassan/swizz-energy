@@ -3,10 +3,34 @@ import React from "react";
 import MyChart from "../components/LineChart";
 import ScrollToTop from "../components/ScrollToTop";
 import img from "../assets/KNOWHOW-min.jpg";
+import img2 from "../assets/know-2.png";
+import img3 from "../assets/FOOTPRINT-min.jpg";
+import Main_section from "../components/main-home/Main_section";
 
 function Knowledge() {
   return (
     <>
+      <style>
+        {`
+       .img-header{
+     
+        position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+       }
+
+      @media (max-width: 767px) {
+        .img-header{
+          min-height: 100%
+
+        }
+      }
+      `}
+      </style>
+
       <header className="relative h-[50vh] md:h-[100vh] w-full overflow-hidden">
         <img className="img-header" src={img} />
         <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
@@ -24,231 +48,169 @@ function Knowledge() {
           </div> */}
         </div>
       </header>
-      <section className="mt-0 container lg:px-14  pt-8">
+
+      <section className="mt-0 ">
         <ScrollToTop />
-        <div className="px-3 md:px-0 my-[100px] bg-white text-start">
-          <h1 className="text-2xl text-center mb-5 text-black  font-semibold py-5 ">
-            Knowledge Base
-          </h1>
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              The global average atmospheric carbon dioxide level is nearly 417
-              ppm parts per million due to 2400 Gigatons of carbon dioxide (CO2)
-              caused by human activities since the industrial era start. This
-              includes emissions from fossil fuels, deforestation and other
-              land-use changes.
-            </p>
+        <div className=" bg-white text-center mb-9">
+          <div className="flex justify-center my-[60px]">
+            <h1 className="page-title3 tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
+              THE POWER OF KNOWLEDGE
+            </h1>
           </div>
+          <div className="px-4 w-full md:w-[80Vw] lg:w-[60vw] text-justify md:text-justify mb-28 flex mx-auto lg:px-14">
+            <ul className="pl-[20px] list-disc">
+              <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+                The global average atmospheric carbon dioxide level is nearly
+                417 ppm parts per million due to 2400 Gigatons of carbon dioxide
+                (CO2) caused by human activities since the industrial era start.
+                This includes emissions from fossil fuels, deforestation and
+                other land-use changes.
+              </li>
+              <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+                The concentration of carbon dioxide in the atmosphere has
+                increased by more than 40% since the beginning of the industrial
+                era.
+              </li>
+              <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+                To put this in perspective, it is estimated that the Earth's
+                atmosphere can absorb a maximum of around 3,000 Gt of CO2 before
+                reaching dangerous levels of global warming.
+              </li>
+              <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+                To limit the most severe impacts of climate change, it is
+                necessary to reduce carbon dioxide emissions and transition to a
+                low-carbon economy. Paris Agreement, signed by 197 countries in
+                2015, aims to limit global warming to well below 2°C above
+                pre-industrial levels and pursue efforts to limit the
+                temperature increase to 1.5°C. To achieve this goal, countries
+                have pledged to reduce their greenhouse gas emissions and work
+                towards a carbon-neutral economy.
+              </li>
+            </ul>
+          </div>
+        </div>
 
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              The concentration of carbon dioxide in the atmosphere has
-              increased by more than 40% since the beginning of the industrial
-              era.
-            </p>
+        <div className="my-8 lg:px-40 flex fle flex-wrap justify-around items-center">
+          <div className="w-full flex justify-center items-center md:w-[47%]">
+            <ul className="pl-[20px] list-disc">
+              <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+                Within the last 50 years The ppm jumped from 315 to 415 Let’s
+                imagine that the critical level for a human being to live and
+                breath is 800 ppm (recommended indoor averages are between 600
+                to 1000 ppm).
+              </li>
+              <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+                burning of fossil fuels for energy is the largest contributor to
+                global carbon dioxide emissions, accounting for around 75%-85%
+                of total emissions, mainly used for Industry, heat + electricity
+                + transportation
+              </li>
+              <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+                Fossil fuel use created 33.2 billion tons of carbon dioxide
+                emissions in 2011 worldwide
+              </li>
+            </ul>
           </div>
+          <div className="w-full flex justify-center items-center md:w-[47%]">
+            <MyChart />
+          </div>
+        </div>
+        <div className="my-0 lg:px-40">
+          <Main_section
+            content={
+              <>
+                <ul className="pl-[20px] list-disc">
+                  <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+                    The aviation industry is responsible for around 2.5% of
+                    global carbon dioxide emissions, with emissions projected to
+                    triple by 2050 if no action is taken.
+                  </li>
+                  <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+                    The use of coal as an energy source is declining in many
+                    countries, but it still accounts for around 40% of global
+                    electricity generation and is the largest source of carbon
+                    dioxide emissions from electricity generation.
+                  </li>
+                  <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+                    Carbon capture and storage (CCS) is a technology that can
+                    capture carbon dioxide emissions from power plants and
+                    industrial processes and store them underground. It is
+                    currently in use in some parts of the world, but more
+                    widespread deployment is needed to reach global climate
+                    goals.
+                  </li>
+                </ul>
+              </>
+            }
+            title={null}
+            reverse={false}
+            imgSrc={img2}
+            imgStyle={"72%"}
+          />
+        </div>
+      </section>
 
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              To put this in perspective, it is estimated that the Earth's
-              atmosphere can absorb a maximum of around 3,000 Gt of CO2 before
-              reaching dangerous levels of global warming.
-            </p>
-          </div>
+      <header className="relative h-[50vh] md:h-[90vh] my-20 w-full overflow-hidden">
+        <img className="img-header" src={img3} />
+        <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
+          {/* <div className="font-extrabold absolute bottom-0">
+            <h1
+              style={{
+                fontFamily: "Montserrat",
+                fontWeight: "900",
+                letterSpacing: "3px",
+              }}
+              className="text-[13px] md:text-3xl text-center mb-16 text-white px-5 bg-[#8080807a] rounded-lg py-5 "
+            >
+              OUR STRATEGY
+            </h1>
+          </div> */}
+        </div>
+      </header>
 
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              To limit the most severe impacts of climate change, it is
-              necessary to reduce carbon dioxide emissions and transition to a
-              low-carbon economy. Paris Agreement, signed by 197 countries in
-              2015, aims to limit global warming to well below 2°C above
-              pre-industrial levels and pursue efforts to limit the temperature
-              increase to 1.5°C. To achieve this goal, countries have pledged to
-              reduce their greenhouse gas emissions and work towards a
-              carbon-neutral economy.
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              Within the last 50 years The ppm jumped from 315 to 415 Let’s
-              imagine that the critical level for a human being to live and
-              breath is 800 ppm (recommended indoor averages are between 600 to
-              1000 ppm).
-            </p>
-          </div>
-          <div className="my-8 flex flex-wrap justify-around items-center">
-            <div className="w-full flex justify-center items-center md:w-[47%]">
-              <MyChart />
-            </div>
-            <div className="w-full flex justify-center items-center md:w-[47%]">
-              <div className="flex items-baseline">
-                <ArrowRightOutlined className="text-bg-color mr-2" />
-                <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-                  burning of fossil fuels for energy is the largest contributor
-                  to global carbon dioxide emissions, accounting for around
-                  75%-85% of total emissions, mainly used for Industry, heat +
-                  electricity + transportation Fossil fuel use created 33.2
-                  billion tons of carbon dioxide emissions in 2011 worldwide
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              burning of fossil fuels for energy is the largest contributor to
-              global carbon dioxide emissions, accounting for around 75%-85% of
-              total emissions, mainly used for Industry, heat + electricity +
-              transportation Fossil fuel use created 33.2 billion tons of carbon
-              dioxide emissions in 2011 worldwide
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              The Arctic sea ice minimum extent has decreased by approximately
-              12.8% per decade since the late 1970s.
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              The global sea level has risen by around 20cm since the start of
-              the 20th century due to melting glaciers and ice sheets.
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              The Arctic region is warming at least twice as fast as the global
-              average, leading to the loss of permafrost, melting sea ice, and
-              rising sea levels.
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              Climate change is causing more frequent and intense extreme
-              weather events, such as heatwaves, droughts, floods, and
-              hurricanes.
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              The melting of the Greenland and Antarctic ice sheets could lead
-              to a global sea level rise of several meters over the next few
-              centuries, which would have catastrophic consequences for
-              low-lying coastal areas and island nations.
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              The aviation industry is responsible for around 2.5% of global
-              carbon dioxide emissions, with emissions projected to triple by
-              2050 if no action is taken.
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              The use of coal as an energy source is declining in many
-              countries, but it still accounts for around 40% of global
-              electricity generation and is the largest source of carbon dioxide
-              emissions from electricity generation.
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              Carbon capture and storage (CCS) is a technology that can capture
-              carbon dioxide emissions from power plants and industrial
-              processes and store them underground. It is currently in use in
-              some parts of the world, but more widespread deployment is needed
-              to reach global climate goals.
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              The ocean has absorbed around 30% of the carbon dioxide emitted by
-              human activities, leading to ocean acidification which threatens
-              marine life.
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              The Intergovernmental Panel on Climate Change (IPCC) has stated
-              that to limit global warming to 1.5°C, carbon dioxide emissions
-              need to be reduced by approximately 45% by 2030, compared to 2010
-              levels.
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              Forests and other land ecosystems absorb around 30% of
-              human-caused carbon dioxide emissions each year, highlighting the
-              importance of protecting and restoring forests to limit climate
-              change.
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              Around 1.1 billion people worldwide lack access to electricity,
-              with many relying on fossil fuels such as kerosene for lighting
-              and cooking. Transitioning to renewable energy sources can provide
-              access to electricity while reducing carbon emissions.
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              Methane is a potent greenhouse gas with a global warming potential
-              28 times higher than carbon dioxide over a 100-year timescale.
-              Agriculture and livestock contribute around 44% of human-caused
-              methane emissions, highlighting the need for sustainable farming
-              practices.
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              The World Meteorological Organization report mentioned that the
-              likelihood of extreme heat events has increased 10 times in some
-              parts of the world due to human-caused climate change.
-            </p>
-          </div>
-
-          <div className="flex items-baseline">
-            <ArrowRightOutlined className="text-bg-color mr-2" />
-            <p className="leading-[2.7] px-3 md:px-0 text-text-color text-[17px] lg:text-[22px] font-normal md:font-medium ">
-              The economic cost of climate change is projected to be
-              significant, with estimates suggesting that by 2050, it could cost
-              the world economy $7-13 trillion (4% of global GDP) annually.
+      <section className="mt-0 container lg:px-14 my-20  flex justify-center">
+        <div className="px-4 lg:px-14 md:px-0 mb-6 md:w-[80Vw] lg:w-[60vw] bg-white text-start">
+          {/* <div className="flex justify-center my-[60px]">
+            <h1 className="page-title tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
+              THE POWER OF BIOMASS
+            </h1>
+          </div> */}
+          <div className="">
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+              <ul className="list-disc ml-5">
+                <li>
+                  Forests, oceans and other land ecosystems absorb around 30% of
+                  human-caused carbon dioxide emissions each year, leading to
+                  ocean acidification which threatens marine life and
+                  highlighting the importance of protecting forests to limit
+                  climate change.
+                </li>
+                <li>
+                  Climate change is causing more frequent and intense extreme
+                  weather events, such as heatwaves, droughts, floods, and
+                  hurricanes.
+                </li>
+                <li>
+                  Around 1.1 billion people worldwide lack access to
+                  electricity, with many relying on fossil fuels such as
+                  kerosene for lighting and cooking. Transitioning to renewable
+                  energy sources can provide access to electricity while
+                  reducing carbon emissions.
+                </li>
+                <li>
+                  The Intergovernmental Panel on Climate Change (IPCC) has
+                  stated that to limit global warming to 1.5°C, carbon dioxide
+                  emissions need to be reduced by approximately 45% by 2030,
+                  compared to 2010 levels.
+                </li>
+                <li>
+                  Methane is a potent greenhouse gas with a global warming
+                  potential 28 times higher than carbon dioxide over a 100-year
+                  timescale. Agriculture and livestock contribute around 44% of
+                  human-caused methane emissions, highlighting the need for
+                  sustainable farming practices.
+                </li>
+              </ul>
             </p>
           </div>
         </div>

@@ -2,7 +2,7 @@ import { RightOutlined } from "@ant-design/icons";
 import { Parallax } from "react-scroll-parallax";
 import img from "../../assets/img-2.jpg";
 
-const Main_section = ({ reverse, title, content, imgSrc }) => {
+const Main_section = ({ reverse, title, content, imgSrc, imgStyle }) => {
   return (
     <>
       <style jsx="true">
@@ -30,23 +30,28 @@ const Main_section = ({ reverse, title, content, imgSrc }) => {
       </style>
       <section className="  main_section grid  grid-cols-1 md:grid-cols-2  items-stretch  ">
         <div
-          className={`img-container   hidden md:block ${
+          className={`img-container hidden md:flex items-center justify-center ${
             reverse ? "order-2" : ""
           } `}
         >
           <img
             src={imgSrc}
             alt="img"
-            className="h-[100%] w-[100%]  object-cover "
+            className={`h-[100%]
+             ${imgStyle ? `w-[${imgStyle}]` : `w-[100%]`}
+             ${imgStyle ? `h-[80%]` : `h-[100%]`}
+                object-cover `}
           />
         </div>
         <div className="info  max-w-[90%] md:max-w-[85%] lg:max-w-[75%] flex flex-col justify-center items-center mx-auto  md:py-7   ">
-          <h2
-            style={{ lineHeight: "5px !important" }}
-            className="heading text-white md:text-text-color font-bold text-center mb-11  py-3 text-xl "
-          >
-            {title}
-          </h2>
+          {title && (
+            <h2
+              style={{ lineHeight: "5px !important" }}
+              className="heading text-white md:text-text-color font-bold text-center mb-11  py-3 text-xl "
+            >
+              {title}
+            </h2>
+          )}
           {content}
           {/* <div className="text-center mt-8">
             <a

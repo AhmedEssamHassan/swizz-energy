@@ -6,8 +6,8 @@ import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 
 const menuItems = [
   {
-    path: "/",
-    label: "Home",
+    path: "/services",
+    label: "Services",
   },
   {
     path: "/recycling",
@@ -26,12 +26,12 @@ const menuItems = [
     label: "Pellets",
   },
   {
-    path: "/about",
-    label: "About",
-  },
-  {
     path: "/knowledge",
     label: "Knowledge",
+  },
+  {
+    path: "/about",
+    label: "About us",
   },
 ];
 
@@ -103,7 +103,9 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
       letter-spacing: 1px !important
     }
     .ant-menu-item-selected::after, .ant-menu-light.ant-menu-horizontal >.ant-menu-item-active::after{
-      border-bottom-color:#C00000 !important;
+      border-bottom-color:#3a3e46 !important;
+      border-bottom: 4px solid;
+
     }
     .ant-menu-item-selected{
       color:black !important;
@@ -150,7 +152,7 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
             to={"/"}
           >
             {/* <img width={150} height="60" src={logo} title="" alt="logo" /> */}
-            <p>swiss energy hub</p>
+            <p className="text-[26px]">swiss energy hub</p>
           </Link>
           <div className="flex justify-center items-center">
             {screenWidth > 767 && (

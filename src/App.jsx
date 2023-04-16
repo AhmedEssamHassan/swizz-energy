@@ -18,6 +18,7 @@ import Vision from "./pages/Vision";
 import Mission from "./pages/Mission";
 import GTC from "./pages/GTC";
 import { QuestionCircleOutlined } from "@ant-design/icons";
+import Services from "./pages/Services";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -86,6 +87,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/recycling" element={<Recycling />} />
           <Route path="/energy" element={<Energy />} />
           <Route path="/hydrogen" element={<Hydrogen />} />

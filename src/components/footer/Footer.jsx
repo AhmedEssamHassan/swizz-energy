@@ -101,9 +101,12 @@ function Footer() {
           <IoIosMail
             style={{ fontSize: "25px", color: "white", marginBottom: "20px" }}
           />
-          <p className=" contact-text text-[14px] font-[600] text-center">
+          <a
+            className="contact-text text-[14px] font-[600] text-center"
+            href="mailto:info@swissenergyhub.com?subject=Subject"
+          >
             info@swissenergyhub.com
-          </p>
+          </a>
 
           <p className=" contact-text text-[14px] font-[600] text-center">
             www.swissenergyhub.com

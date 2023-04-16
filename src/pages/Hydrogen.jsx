@@ -45,7 +45,7 @@ min-height:100vh
         <ScrollToTop />
         <div className="px-4 lg:px-14 md:px-0 mb-6 md:w-[80Vw] lg:w-[60vw] bg-white text-start">
           <div className="flex justify-center my-[60px]">
-            <h1 className="page-title tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
+            <h1 className="page-title3 tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
               THE POWER OF HYDROGEN
             </h1>
           </div>
@@ -76,7 +76,7 @@ min-height:100vh
           </div>
         </div>
       </section>
-      <header className="relative h-[50vh] md:h-[100vh] w-full overflow-hidden">
+      <header className="relative h-[50vh] my-20 md:h-[100vh] w-full overflow-hidden">
         <img className="img-header" src={green} />
         <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
           {/* <div className="font-extrabold absolute bottom-0">
@@ -93,7 +93,7 @@ min-height:100vh
           </div> */}
         </div>
       </header>
-      <section className="mt-0 container lg:px-14  flex justify-center">
+      <section className="mt-0 container lg:px-14 my-20 flex justify-center">
         <div className="px-4 lg:px-14 md:px-0 mb-6 my-10 md:w-[80Vw] lg:w-[60vw] bg-white text-start">
           {/* <div className="flex justify-center my-[60px]">
             <h1 className="page-title tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">

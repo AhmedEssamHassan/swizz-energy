@@ -46,7 +46,7 @@ min-height:100vh
         <ScrollToTop />
         <div className="px-4 lg:px-14 md:px-0 mb-6 md:w-[80Vw] lg:w-[60vw] bg-white text-start">
           <div className="flex justify-center my-[60px]">
-            <h1 className="page-title tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
+            <h1 className="page-title3 tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
               THE POWER OF STEAM
             </h1>
           </div>
