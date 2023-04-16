@@ -9,6 +9,22 @@ import img2 from "../assets/Team3.jpg";
 function WhoWeAre() {
   return (
     <>
+      <style>
+        {`
+       .img-header{
+        width: 100%;
+        height: 100%;
+        // object-fit: cover;
+       }
+
+      @media (max-width: 767px) {
+        .img-header{
+          min-height: 100%
+
+        }
+      }
+      `}
+      </style>
       <header className="relative h-[50vh] md:h-[100vh] w-full overflow-hidden">
         <img className="img-header" src={team} />
         {/* <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">

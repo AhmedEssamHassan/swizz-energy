@@ -7,22 +7,10 @@ function Services() {
       <style>
         {`
 	 .img-header{
- 
-		 object-fit: cover;
-min-height:100vh     
-
-
-}
-.img-header img{
-
-	transform: scale(0.8);
-}
-
-	@media (max-width: 767px) {
-		.img-header{
-			min-height: 100%
-
-		}
+    width: 100%;
+    height: 100%;
+    
+    }
 	}
 	`}
       </style>

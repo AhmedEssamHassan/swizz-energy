@@ -21,14 +21,11 @@ function Recycling() {
             }
           }
           .img-header {
-            object-fit: cover;
-            min-height: 100vh;
+            width: 100%;
+            height: 100%;
           }
 
-          @media (max-width: 767px) {
-            .img-header {
-              min-height: 100%;
-            }
+         
           }
         `}
       </style>
