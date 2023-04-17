@@ -102,11 +102,14 @@ function Navbar({ screenWidth, navbarColor, scrollPosition }) {
       font-weight: 600 !important;
       letter-spacing: 1px !important
     }
-    .ant-menu-item-selected::after, .ant-menu-light.ant-menu-horizontal >.ant-menu-item-active::after{
+    li.ant-menu-item.ant-menu-item-active.ant-menu-item-selected.ant-menu-item-only-child::after{
       border-bottom-color:#3a3e46 !important;
       border-bottom: 4px solid;
 
-    }
+    }    
+    li.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child::after{
+      border-bottom-color:transparent !important;
+    }    
     .ant-menu-item-selected{
       color:black !important;
     }
