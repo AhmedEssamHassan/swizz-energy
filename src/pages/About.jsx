@@ -6,7 +6,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import img1 from "../assets/Team2.jpg";
 import img2 from "../assets/Team3.jpg";
 
-function WhoWeAre() {
+function WhoWeAre({ screenWidth }) {
   return (
     <>
       <style>
@@ -20,7 +20,6 @@ function WhoWeAre() {
       @media (max-width: 767px) {
         .img-header{
           min-height: 100%
-
         }
       }
       `}
@@ -65,47 +64,52 @@ function WhoWeAre() {
         </div>
         <div className="mt-24">
           <Main_section
+            screenWidth={screenWidth}
+            title="Vision"
+            reverse={false}
+            // imgSrc={img1}
             content={
-              <>
-                <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify leading-10">
+              <div>
+                <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify leading-10">
                   Our vision is a future where clean energy powers the world,
                   communities flourish in harmony with the environment, and
                   sustainable energy is affordable to everyone.
                 </p>
-                <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify leading-10">
+                <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify leading-10">
                   As a leading voice and catalyst for change, we are committed
                   to inspiring a global movement towards a cleaner, more
                   equitable future.
                 </p>
-                <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify leading-10">
+                <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify leading-10">
                   We strive to be the go-to partner for all stakeholders who
                   share our passion for sustainability, innovation, and social
                   responsibility to build together a sustainable and resilient
                   future for ourselves and generations to come.
                 </p>
-                <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify leading-10">
+                <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify leading-10">
                   Through our consulting services, we enable our clients to
                   contribute to the global transition towards clean energy by
                   implementing renewable energy solutions across Europe, Africa,
                   and the Middle East
                 </p>
-                {/* <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify leading-10 mt-4 lg:mt-8">
+                {/* <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify leading-10 mt-4 lg:mt-8">
               We enable logistics decarbonisation by aiming for
               <b className="md:ml-2 text-justify">
                 carbon neutrality; supporting logistics transition solutions;
                 and maintaining a focus on energy efficiency.
               </b>
             </p> */}
-              </>
+              </div>
             }
-            title="Vision"
-            reverse={false}
-            imgSrc={img1}
           />
           <Main_section
+            screenWidth={screenWidth}
+            reverse={true}
+            title="Mission"
+            imgSrc={img2}
             content={
               <>
-                <p className="leading-2 md:leading-9 text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify">
+                <p className="leading-2 md:leading-9 text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify">
                   Our mission is dedicated to raising public awareness about the
                   importance of transitioning from fossil fuels to sustainable
                   energy sources. We aim to foster responsible behavior among
@@ -118,13 +122,13 @@ function WhoWeAre() {
                   sustainable energy solutions and contribute towards the global
                   transition towards a clean earth for our next generations.
                 </p>
-                <p className="leading-2 md:leading-9 text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify">
+                <p className="leading-2 md:leading-9 text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify">
                   At our company, we're committed to promoting sustainable waste
                   management best-practices and helping governments and
                   organizations to find the optimal solution for their
                   challenges.
                 </p>
-                <p className="leading-2 md:leading-9 text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify">
+                <p className="leading-2 md:leading-9 text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify">
                   we also connect partners with the right technology provider
                   and follow-up with them to ensure the best quality of service
                   and a project completion fulfilling the most added-value to
@@ -132,9 +136,6 @@ function WhoWeAre() {
                 </p>
               </>
             }
-            reverse={true}
-            title="Mission"
-            imgSrc={img2}
           />
         </div>
         {/* <Secondary_section /> */}

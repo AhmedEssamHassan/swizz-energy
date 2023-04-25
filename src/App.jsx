@@ -70,6 +70,11 @@ function App() {
 
   return (
     <>
+      <style>{`
+        body.sidebar-open, html.sidebar-open {
+        overflow: hidden;
+      }
+      `}</style>
       <Cursor color="#fff" ringSize={"20px"} cursorSize="5px" />
       <a
         href="https://calendly.com/swissenergyhub"
@@ -107,7 +112,7 @@ function App() {
           <Route path="/hydrogen" element={<Hydrogen />} />
           <Route path="/pellets" element={<Pellets />} />
           <Route path="/gtc" element={<GTC />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About screenWidth={screenWidth} />} />
           <Route path="/knowledge" element={<Knowledge />} />
           <Route path="/about/vision" element={<Vision />} />
           <Route path="/about/mission" element={<Mission />} />
