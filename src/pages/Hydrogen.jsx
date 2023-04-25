@@ -2,7 +2,11 @@ import React from "react";
 import ScrollToTop from "../components/ScrollToTop";
 import hydrogen from "../assets/HYDROGEN-min.jpg";
 import green from "../assets/FOSSIL_GREEN-min.jpg";
+import { useTranslation } from "react-i18next";
+
 function Hydrogen() {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <style>
@@ -16,7 +20,7 @@ function Hydrogen() {
      }
 
     
-    }
+    
     `}
       </style>
 
@@ -42,33 +46,13 @@ function Hydrogen() {
         <div className="px-4 lg:px-14 md:px-0 mb-6 md:w-[80Vw] lg:w-[60vw] bg-white text-start">
           <div className="flex flex-col items-center mt-10 justify-around h-[120px] mb-[20px]">
             <h1 className="tracking-[1px] w-fit text-lg md:text-xl text-center text-black  font-semibold  ">
-              THE POWER OF HYDROGEN
+              {t("hydrogen-title")}
             </h1>
             <span className="w-[50px] h-[4px] bg-bg-color"></span>
           </div>
           <div className="">
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
-              Hydrogen gas is a clean and renewable source of energy that could
-              replace fossil fuels in a wide range of applications, from
-              transportation to power generation. One of the most promising
-              methods of producing hydrogen gas is through the process of
-              electrolysis, which involves using electricity to split water into
-              hydrogen and oxygen molecules On average, producing 1 kilogram of
-              hydrogen gas requires approximately 50 kilowatt-hours (kWh) of
-              electricity. This means that the efficiency of the process is
-              approximately 60-70%, depending on the specific equipment and
-              conditions used. To put this into perspective, a typical car with
-              a 100-kilowatt fuel cell engine would require approximately 1 kg
-              of hydrogen gas to travel 100 km. To produce this amount of
-              hydrogen gas would require approximately 50 kWh of electricity. In
-              terms of percentages, this means that approximately 30-40% of the
-              energy used to produce the hydrogen gas is lost as waste heat
-              during the electrolysis process. The remaining 60-70% of the
-              energy is stored in the hydrogen gas. Also wind or solar power,
-              can further improve the environmental sustainability of the
-              process. In conclusion, producing hydrogen gas from electricity
-              and water is an efficient and promising method of producing clean,
-              renewable energy.
+              {t("hydrogen-desc1")}
             </p>
           </div>
         </div>
@@ -99,26 +83,12 @@ function Hydrogen() {
           </div> */}
           <div className="">
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
-              There are still some challenges to go through in order to have
-              hydrogen usage becoming very popular, mainly the safety issues:
+              {t("hydrogen-challenge")}
               <ul className="list-disc ml-5">
-                <li>
-                  Storage: hydrogen is a very small molecule and can escape from
-                  storage tanks or pipelines more easily than other gases. If
-                  there is a leak, the hydrogen can quickly disperse and
-                  represent danger.
-                </li>
-                <li>
-                  Hydrogen is often stored in high-pressure tank (700 bars),
-                  which can rupture if the pressure exceeds the tank's capacity.
-                </li>
+                <li>{t("hydrogen-challenge-item1")}</li>
+                <li>{t("hydrogen-challenge-item2")}</li>
               </ul>
-              To avoid these issues high-quality materials should be used,
-              maintenance, regular inspections and implementing safety features
-              like pressure relief valves and leak detection systems should be
-              applied. By optimizing the efficiency of the electrolysis process,
-              and the safety challenges we could reduce our dependence on fossil
-              fuels and contribute to a more sustainable future.
+              {t("hydrogen-challenge-item3")}
             </p>
           </div>
         </div>

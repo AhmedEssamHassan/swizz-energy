@@ -3,6 +3,8 @@ import { Parallax } from "react-scroll-parallax";
 import img from "../../assets/img-2.jpg";
 
 const Main_section = ({ reverse, title, content, imgSrc, imgStyle }) => {
+  console.log(window.innerWidth);
+
   return (
     <>
       <style jsx="true">
@@ -10,7 +12,6 @@ const Main_section = ({ reverse, title, content, imgSrc, imgStyle }) => {
           @media (max-width: 767px) {
             .main_section {
               position: relative;
-              background-image: url(../${imgSrc});
               z-index: 1;
               background-repeat: no-repeat;
               background-size: cover;
@@ -28,7 +29,14 @@ const Main_section = ({ reverse, title, content, imgSrc, imgStyle }) => {
           }
         `}
       </style>
-      <section className="  main_section grid  grid-cols-1 md:grid-cols-2  items-stretch  ">
+      <section
+        className="  main_section grid  grid-cols-1 md:grid-cols-2  items-stretch  "
+        style={{
+          backgroundImage: ` ${
+            window.innerWidth < 767 ? `url(../${imgSrc})` : ""
+          }`,
+        }}
+      >
         <div
           className={`img-container hidden md:flex items-center justify-center ${
             reverse ? "order-2" : ""

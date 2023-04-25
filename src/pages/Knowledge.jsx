@@ -5,9 +5,12 @@ import ScrollToTop from "../components/ScrollToTop";
 import img from "../assets/KNOWHOW-min.jpg";
 import img2 from "../assets/know-2.png";
 import img3 from "../assets/FOOTPRINT-min.jpg";
+import { useTranslation } from "react-i18next";
 import Main_section from "../components/main-home/Main_section";
 
 function Knowledge() {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <style>
@@ -46,38 +49,23 @@ function Knowledge() {
         <div className=" bg-white text-center mb-9">
           <div className="flex flex-col items-center mt-10 justify-around h-[120px] mb-[20px]">
             <h1 className="tracking-[1px] w-fit text-lg md:text-xl text-center text-black  font-semibold  ">
-              THE POWER OF KNOWLEDGE
+              {t("knowledge-title")}
             </h1>
             <span className="w-[50px] h-[4px] bg-bg-color"></span>
           </div>
           <div className="px-4 w-full md:w-[80Vw] lg:w-[60vw] text-justify md:text-justify mb-28 flex mx-auto lg:px-14">
             <ul className="pl-[20px] list-disc">
               <li className="px-3 md:px-0 lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
-                The global average atmospheric carbon dioxide level is nearly
-                417 ppm parts per million due to 2400 Gigatons of carbon dioxide
-                (CO2) caused by human activities since the industrial era start.
-                This includes emissions from fossil fuels, deforestation and
-                other land-use changes.
+                {t("knowledge-desc1")}
               </li>
               <li className="px-3 md:px-0 lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
-                The concentration of carbon dioxide in the atmosphere has
-                increased by more than 40% since the beginning of the industrial
-                era.
+                {t("knowledge-desc2")}
               </li>
               <li className="px-3 md:px-0 lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
-                To put this in perspective, it is estimated that the Earth's
-                atmosphere can absorb a maximum of around 3,000 Gt of CO2 before
-                reaching dangerous levels of global warming.
+                {t("knowledge-desc3")}
               </li>
               <li className="px-3 md:px-0 lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
-                To limit the most severe impacts of climate change, it is
-                necessary to reduce carbon dioxide emissions and transition to a
-                low-carbon economy. Paris Agreement, signed by 197 countries in
-                2015, aims to limit global warming to well below 2°C above
-                pre-industrial levels and pursue efforts to limit the
-                temperature increase to 1.5°C. To achieve this goal, countries
-                have pledged to reduce their greenhouse gas emissions and work
-                towards a carbon-neutral economy.
+                {t("knowledge-desc4")}
               </li>
             </ul>
           </div>
@@ -87,20 +75,13 @@ function Knowledge() {
           <div className="w-full flex justify-center items-center md:w-[47%]">
             <ul className="pl-[20px] list-disc">
               <li className="px-3 md:px-0 lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
-                Within the last 50 years The ppm jumped from 315 to 415 Let’s
-                imagine that the critical level for a human being to live and
-                breath is 800 ppm (recommended indoor averages are between 600
-                to 1000 ppm).
+                {t("knowledge-desc5")}
               </li>
               <li className="px-3 md:px-0 lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
-                burning of fossil fuels for energy is the largest contributor to
-                global carbon dioxide emissions, accounting for around 75%-85%
-                of total emissions, mainly used for Industry, heat + electricity
-                + transportation
+                {t("knowledge-desc6")}
               </li>
               <li className="px-3 md:px-0 lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
-                Fossil fuel use created 33.2 billion tons of carbon dioxide
-                emissions in 2011 worldwide
+                {t("knowledge-desc7")}
               </li>
             </ul>
           </div>
@@ -114,23 +95,13 @@ function Knowledge() {
               <>
                 <ul className="pl-[20px] list-disc">
                   <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
-                    The aviation industry is responsible for around 2.5% of
-                    global carbon dioxide emissions, with emissions projected to
-                    triple by 2050 if no action is taken.
+                    {t("knowledge-desc8")}
                   </li>
                   <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
-                    The use of coal as an energy source is declining in many
-                    countries, but it still accounts for around 40% of global
-                    electricity generation and is the largest source of carbon
-                    dioxide emissions from electricity generation.
+                    {t("knowledge-desc9")}
                   </li>
                   <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
-                    Carbon capture and storage (CCS) is a technology that can
-                    capture carbon dioxide emissions from power plants and
-                    industrial processes and store them underground. It is
-                    currently in use in some parts of the world, but more
-                    widespread deployment is needed to reach global climate
-                    goals.
+                    {t("knowledge-desc10")}
                   </li>
                 </ul>
               </>
@@ -171,38 +142,11 @@ function Knowledge() {
           <div className="">
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
               <ul className="list-disc ml-5">
-                <li>
-                  Forests, oceans and other land ecosystems absorb around 30% of
-                  human-caused carbon dioxide emissions each year, leading to
-                  ocean acidification which threatens marine life and
-                  highlighting the importance of protecting forests to limit
-                  climate change.
-                </li>
-                <li>
-                  Climate change is causing more frequent and intense extreme
-                  weather events, such as heatwaves, droughts, floods, and
-                  hurricanes.
-                </li>
-                <li>
-                  Around 1.1 billion people worldwide lack access to
-                  electricity, with many relying on fossil fuels such as
-                  kerosene for lighting and cooking. Transitioning to renewable
-                  energy sources can provide access to electricity while
-                  reducing carbon emissions.
-                </li>
-                <li>
-                  The Intergovernmental Panel on Climate Change (IPCC) has
-                  stated that to limit global warming to 1.5°C, carbon dioxide
-                  emissions need to be reduced by approximately 45% by 2030,
-                  compared to 2010 levels.
-                </li>
-                <li>
-                  Methane is a potent greenhouse gas with a global warming
-                  potential 28 times higher than carbon dioxide over a 100-year
-                  timescale. Agriculture and livestock contribute around 44% of
-                  human-caused methane emissions, highlighting the need for
-                  sustainable farming practices.
-                </li>
+                <li>{t("knowledge-desc11")}</li>
+                <li>{t("knowledge-desc12")}</li>
+                <li>{t("knowledge-desc13")}</li>
+                <li>{t("knowledge-desc14")}</li>
+                <li>{t("knowledge-desc15")}</li>
               </ul>
             </p>
           </div>
