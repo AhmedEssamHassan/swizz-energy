@@ -18,6 +18,8 @@ import Vision from "./pages/Vision";
 import Mission from "./pages/Mission";
 import GTC from "./pages/GTC";
 import { QuestionCircleOutlined } from "@ant-design/icons";
+import Services from "./pages/Services";
+import i18n from "./i18n/config";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -27,7 +29,7 @@ function App() {
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const [navbarColor, setNavbarColor] = useState("transparent");
-
+  const [lang, setLang] = useState("en");
   useEffect(() => {
     const handleScroll = () => {
       const position = window.pageYOffset;
@@ -58,6 +60,14 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    if (lang == "en") {
+      i18n.changeLanguage("en");
+    } else {
+      i18n.changeLanguage("de");
+    }
+  }, [lang]);
+
   return (
     <>
       <Cursor color="#fff" ringSize={"20px"} cursorSize="5px" />
@@ -72,6 +82,8 @@ function App() {
         <ProgressBar color="#972A17" gradient={true} height={5} />
         {screenWidth > 1024 ? (
           <Navbar
+            setLang={setLang}
+            lang={lang}
             scrollPosition={scrollPosition}
             navbarColor={navbarColor}
             screenWidth={screenWidth}
@@ -86,7 +98,11 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/recycling" element={<Recycling />} />
+          <Route path="/services" element={<Services />} />
+          <Route
+            path="/recycling"
+            element={<Recycling screenWidth={screenWidth} />}
+          />
           <Route path="/energy" element={<Energy />} />
           <Route path="/hydrogen" element={<Hydrogen />} />
           <Route path="/pellets" element={<Pellets />} />

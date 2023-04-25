@@ -11,8 +11,9 @@ function Energy() {
         {`
        .img-header{
      
-         object-fit: cover;
-min-height:100vh     
+        width: 100%;
+        height: 100%;
+        // object-fit: cover;
 
 
        }
@@ -45,10 +46,16 @@ min-height:100vh
       <section className="mt-0 container lg:px-14  flex justify-center">
         <ScrollToTop />
         <div className="px-4 lg:px-14 md:px-0 mb-6 md:w-[80Vw] lg:w-[60vw] bg-white text-start">
-          <div className="flex justify-center my-[60px]">
-            <h1 className="page-title tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
+          {/* <div className="flex justify-center my-[60px]">
+            <h1 className="page-title3 tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
               THE POWER OF STEAM
             </h1>
+          </div> */}
+          <div className="flex flex-col items-center justify-around mt-10 h-[120px] mb-[20px]">
+            <h1 className="tracking-[1px] w-fit text-xl text-center text-black  font-semibold  ">
+              THE POWER OF STEAM
+            </h1>
+            <span className="w-[50px] h-[4px] bg-bg-color"></span>
           </div>
           <div className="">
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] tracking-[1px] font-normal text-justify ">

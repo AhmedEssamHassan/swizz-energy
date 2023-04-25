@@ -3,11 +3,28 @@ import Main_section from "../components/main-home/Main_section";
 import Secondary_section from "../components/main-home/Secondary_section";
 import team from "../assets/Team.jpg";
 import ScrollToTop from "../components/ScrollToTop";
-import samara from "../assets/SAMARA-min.jpg";
+import img1 from "../assets/Team2.jpg";
+import img2 from "../assets/Team3.jpg";
 
 function WhoWeAre() {
   return (
     <>
+      <style>
+        {`
+       .img-header{
+        width: 100%;
+        height: 100%;
+        // object-fit: cover;
+       }
+
+      @media (max-width: 767px) {
+        .img-header{
+          min-height: 100%
+
+        }
+      }
+      `}
+      </style>
       <header className="relative h-[50vh] md:h-[100vh] w-full overflow-hidden">
         <img className="img-header" src={team} />
         {/* <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
@@ -29,7 +46,7 @@ function WhoWeAre() {
         <ScrollToTop />
         <div className=" bg-white text-center mb-9">
           <div className="flex justify-center my-[60px]">
-            <h1 className="page-title tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
+            <h1 className="page-title3 tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
               THE POWER OF HUMAN
             </h1>
           </div>
@@ -46,77 +63,80 @@ function WhoWeAre() {
             </p>
           </div>
         </div>
-        <Main_section
-          content={
-            <>
-              <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify leading-10">
-                Our vision is a future where clean energy powers the world,
-                communities flourish in harmony with the environment, and
-                sustainable energy is affordable to everyone.
-              </p>
-              <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify leading-10">
-                As a leading voice and catalyst for change, we are committed to
-                inspiring a global movement towards a cleaner, more equitable
-                future.
-              </p>
-              <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify leading-10">
-                We strive to be the go-to partner for all stakeholders who share
-                our passion for sustainability, innovation, and social
-                responsibility to build together a sustainable and resilient
-                future for ourselves and generations to come.
-              </p>
-              <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify leading-10">
-                Through our consulting services, we enable our clients to
-                contribute to the global transition towards clean energy by
-                implementing renewable energy solutions across Europe, Africa,
-                and the Middle East
-              </p>
-              {/* <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify leading-10 mt-4 lg:mt-8">
+        <div className="mt-24">
+          <Main_section
+            content={
+              <>
+                <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify leading-10">
+                  Our vision is a future where clean energy powers the world,
+                  communities flourish in harmony with the environment, and
+                  sustainable energy is affordable to everyone.
+                </p>
+                <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify leading-10">
+                  As a leading voice and catalyst for change, we are committed
+                  to inspiring a global movement towards a cleaner, more
+                  equitable future.
+                </p>
+                <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify leading-10">
+                  We strive to be the go-to partner for all stakeholders who
+                  share our passion for sustainability, innovation, and social
+                  responsibility to build together a sustainable and resilient
+                  future for ourselves and generations to come.
+                </p>
+                <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify leading-10">
+                  Through our consulting services, we enable our clients to
+                  contribute to the global transition towards clean energy by
+                  implementing renewable energy solutions across Europe, Africa,
+                  and the Middle East
+                </p>
+                {/* <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify leading-10 mt-4 lg:mt-8">
               We enable logistics decarbonisation by aiming for
               <b className="md:ml-2 text-justify">
                 carbon neutrality; supporting logistics transition solutions;
                 and maintaining a focus on energy efficiency.
               </b>
             </p> */}
-            </>
-          }
-          title="Vision"
-          reverse={false}
-          imgSrc={samara}
-        />
-        <Main_section
-          content={
-            <>
-              <p className="leading-2 md:leading-9 text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify">
-                Our mission is dedicated to raising public awareness about the
-                importance of transitioning from fossil fuels to sustainable
-                energy sources. We aim to foster responsible behavior among
-                individuals and encourage their active participation in
-                promoting this critical initiative. Moreover, we offer
-                consulting services to companies, governmental and
-                non-governmental organizations, to facilitate the implementation
-                of renewable energy projects across Europe, Africa, and the
-                Middle East. Our ultimate goal is to promote sustainable energy
-                solutions and contribute towards the global transition towards a
-                clean earth for our next generations.
-              </p>
-              <p className="leading-2 md:leading-9 text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify">
-                At our company, we're committed to promoting sustainable waste
-                management best-practices and helping governments and
-                organizations to find the optimal solution for their challenges.
-              </p>
-              <p className="leading-2 md:leading-9 text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify">
-                we also connect partners with the right technology provider and
-                follow-up with them to ensure the best quality of service and a
-                project completion fulfilling the most added-value to our
-                customers.
-              </p>
-            </>
-          }
-          reverse={true}
-          title="Mission"
-          imgSrc={samara}
-        />
+              </>
+            }
+            title="Vision"
+            reverse={false}
+            imgSrc={img1}
+          />
+          <Main_section
+            content={
+              <>
+                <p className="leading-2 md:leading-9 text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify">
+                  Our mission is dedicated to raising public awareness about the
+                  importance of transitioning from fossil fuels to sustainable
+                  energy sources. We aim to foster responsible behavior among
+                  individuals and encourage their active participation in
+                  promoting this critical initiative. Moreover, we offer
+                  consulting services to companies, governmental and
+                  non-governmental organizations, to facilitate the
+                  implementation of renewable energy projects across Europe,
+                  Africa, and the Middle East. Our ultimate goal is to promote
+                  sustainable energy solutions and contribute towards the global
+                  transition towards a clean earth for our next generations.
+                </p>
+                <p className="leading-2 md:leading-9 text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify">
+                  At our company, we're committed to promoting sustainable waste
+                  management best-practices and helping governments and
+                  organizations to find the optimal solution for their
+                  challenges.
+                </p>
+                <p className="leading-2 md:leading-9 text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-start md:text-justify">
+                  we also connect partners with the right technology provider
+                  and follow-up with them to ensure the best quality of service
+                  and a project completion fulfilling the most added-value to
+                  our customers.
+                </p>
+              </>
+            }
+            reverse={true}
+            title="Mission"
+            imgSrc={img2}
+          />
+        </div>
         {/* <Secondary_section /> */}
       </section>
     </>

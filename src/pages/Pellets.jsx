@@ -8,14 +8,11 @@ function Pellets() {
       <style>
         {`
        .img-header{
-          object-fit: cover;
-          min-height:100vh     
+     
+        width: 100%;
+        height: 100%;
        }
 
-      @media (max-width: 767px) {
-        .img-header{
-          min-height: 100%
-        }
       }
       `}
       </style>
@@ -40,10 +37,11 @@ function Pellets() {
       <section className="mt-0 container lg:px-14  flex justify-center">
         <ScrollToTop />
         <div className="px-4 lg:px-14 md:px-0 mb-6 md:w-[80Vw] lg:w-[60vw] bg-white text-start">
-          <div className="flex justify-center my-[60px]">
-            <h1 className="page-title tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
+          <div className="flex flex-col items-center justify-around mt-10 h-[120px] mb-[20px]">
+            <h1 className="tracking-[1px] w-fit text-xl text-center text-black  font-semibold  ">
               THE POWER OF BIOMASS
             </h1>
+            <span className="w-[50px] h-[4px] bg-bg-color"></span>
           </div>
           <div className="">
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
@@ -70,11 +68,11 @@ function Pellets() {
           </div>
         </div>
       </section>
-      <header className="relative h-[50vh] md:h-[100vh] my-10 w-full overflow-hidden">
+      <header className="relative h-[50vh] md:h-[100vh] my-20 w-full overflow-hidden">
         <img className="img-header" src={pampoo} />
         <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
           <div className="font-extrabold absolute bottom-0">
-            <h1
+            {/* <h1
               style={{
                 fontFamily: "Montserrat",
                 fontWeight: "900",
@@ -83,19 +81,20 @@ function Pellets() {
               className="text-[13px] md:text-3xl text-center mb-16 text-white px-5 bg-[#8080807a] rounded-lg py-5 "
             >
               OUR STRATEGY
-            </h1>
+            </h1> */}
           </div>
         </div>
       </header>
-      <section className="mt-0 container lg:px-14  flex justify-center">
+      <section className="mt-0 container lg:px-14 my-20 flex justify-center">
         <div className="px-4 lg:px-14 md:px-0 mb-6 md:w-[80Vw] lg:w-[60vw] bg-white text-start">
-          {/* <div className="flex justify-center my-[60px]">
-            <h1 className="page-title tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
-              THE POWER OF BIOMASS
+          <div className="flex flex-col items-center justify-around h-[120px] mb-[20px]">
+            <h1 className="tracking-[1px] w-fit text-xl text-center text-black  font-semibold  ">
+              OUR STRATEGY{" "}
             </h1>
-          </div> */}
+            <span className="w-[50px] h-[4px] bg-bg-color"></span>
+          </div>
           <div className="">
-            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+            <p className="l bg-bg-coloreading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
               Our strategy revolves around the cultivation of Energy crops in
               warm regions like North Africa, utilize treated wastewater to
               establish a closed-loop system for energy production. produce
@@ -110,18 +109,12 @@ function Pellets() {
               as well boosting the African countries’ economy, create job
               opportunities aiming for a win-win-situation for all.
             </p>
+
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
-              Here are some of its advantages: 4 times more CO2 capturing
-              Wastewater irrigation 6 months short Lifecycle Bamboos’ dryness of
-              8.5% saves additional processing steps in pellet production
-              grinding etc. our process contains no deforesting Electricity
-              production from pellet is a tightly controlled cycle by dust
-              collectors Zero waste, our co2 is being collected in form of ashes
-              which is used fertilizers, cements We are eligible for getting
-              carbon credits which will be invested in optimizing our process
-            </p>
-            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
-              Here are some of its advantages:
+              <span className="font-bold">
+                {" "}
+                Here are some of its advantages:
+              </span>
               <ul className="list-disc ml-5">
                 <li>4 times more CO2 capturing</li>
                 <li>Wastewater irrigation</li>
@@ -130,7 +123,6 @@ function Pellets() {
                   Bamboos’ dryness of 8.5% saves additional processing steps in
                   pellet production grinding etc.
                 </li>
-                <li>our process contains no deforesting</li>
                 <li>our process contains no deforesting</li>
                 <li>
                   Electricity production from pellet is a tightly controlled

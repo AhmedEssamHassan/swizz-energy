@@ -76,10 +76,22 @@ h2.heading::after {
   left: 50%;
   transform: translateX(-50%);
 }
-.page-title::after {
+.page-title3::after {
   content: "";
   position: absolute;
   bottom: -170px;
+  height: 4px;
+  width: 50px;
+  margin: auto;
+  border-radius: 40px;
+  background: #c00000;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.page-title2::after {
+  content: "";
+  position: absolute;
+  bottom: -210px;
   height: 4px;
   width: 50px;
   margin: auto;

@@ -32,7 +32,7 @@ function MyChart() {
       options={chartOptions}
       series={chartOptions.series}
       type="line"
-      height={"100%"}
+      height={"500"}
       style={{ width: "100%" }}
     />
   );
