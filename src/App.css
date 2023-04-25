@@ -125,3 +125,10 @@ h2.heading::after {
   letter-spacing: 2px;
   line-height: 2;
 }
+
+header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(179, 170, 170, 0.123);
+}

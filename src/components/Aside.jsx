@@ -6,7 +6,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { BsInstagram, BsTelephoneFill } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { AiOutlineTwitter } from "react-icons/ai";
+import { AiOutlineGlobal, AiOutlineTwitter } from "react-icons/ai";
 import swizzBlack from "../assets/wizz-black.jpg";
 
 const sidebarLinks = [
@@ -193,10 +193,24 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
                 info@swissenergyhub.com
               </a>
             </li>
+            <li>
+              <NavLink
+                onClick={activeHandler}
+                to={`/`}
+                className="mt-2 flex gap-3 text-[#333] transition-all duration-75 ease-in-out hover:text-black text-sm "
+              >
+                <AiOutlineGlobal
+                  style={{
+                    fontSize: "17px",
+                  }}
+                />
+                www.swissenergyhub.com{" "}
+              </NavLink>
+            </li>
           </ul>
         </div>
 
-        <ul className="social-media flex gap-4 mt-4">
+        {/* <ul className="social-media flex gap-4 mt-4">
           <li>
             <Link to="/">
               <FaFacebookF className="mb-4  text-[17px]" />
@@ -217,7 +231,7 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
               <AiOutlineTwitter className="mb-4  text-[17px]" />
             </Link>
           </li>
-        </ul>
+        </ul> */}
         <div className="w-full flex justify-center">
           <img src={swizzBlack} className="w-[200px]" alt="" />
         </div>

@@ -5,8 +5,10 @@ import team from "../assets/Team.jpg";
 import ScrollToTop from "../components/ScrollToTop";
 import img1 from "../assets/Team2.jpg";
 import img2 from "../assets/Team3.jpg";
+import { useTranslation } from "react-i18next";
 
 function WhoWeAre({ screenWidth }) {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <style>
@@ -24,7 +26,7 @@ function WhoWeAre({ screenWidth }) {
       }
       `}
       </style>
-      <header className="relative h-[50vh] md:h-[100vh] w-full overflow-hidden">
+      <header className="relative h-[50vh] lg:h-[100vh] w-full overflow-hidden">
         <img className="img-header" src={team} />
         {/* <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
           <div className="font-extrabold absolute bottom-0">
@@ -46,19 +48,12 @@ function WhoWeAre({ screenWidth }) {
         <div className=" bg-white text-center mb-9">
           <div className="flex justify-center my-[60px]">
             <h1 className="page-title3 tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
-              THE POWER OF HUMAN
+              {t("about-title")}
             </h1>
           </div>
           <div className="px-4 w-full md:w-[80Vw] lg:w-[60vw] text-justify md:text-justify flex mx-auto lg:px-14">
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px]">
-              We are a group of technology & environment gurus with different
-              backgrounds, IT, Software engineering, project management,
-              mechanical engineering and scientific researchers With our 5
-              spoken languages, multiple cultural and educational backgrounds,
-              modern agile mindset and long years of experiences in different
-              domains, we are confident that we could make a significant change
-              in helping customers to reach their goals and get projects
-              successfully completed
+              {t("about-head")}
             </p>
           </div>
         </div>
@@ -71,26 +66,16 @@ function WhoWeAre({ screenWidth }) {
             content={
               <div>
                 <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify leading-10">
-                  Our vision is a future where clean energy powers the world,
-                  communities flourish in harmony with the environment, and
-                  sustainable energy is affordable to everyone.
+                  {t("about-vision-1")}
                 </p>
                 <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify leading-10">
-                  As a leading voice and catalyst for change, we are committed
-                  to inspiring a global movement towards a cleaner, more
-                  equitable future.
+                  {t("about-vision-2")}
                 </p>
                 <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify leading-10">
-                  We strive to be the go-to partner for all stakeholders who
-                  share our passion for sustainability, innovation, and social
-                  responsibility to build together a sustainable and resilient
-                  future for ourselves and generations to come.
+                  {t("about-vision-3")}
                 </p>
                 <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify leading-10">
-                  Through our consulting services, we enable our clients to
-                  contribute to the global transition towards clean energy by
-                  implementing renewable energy solutions across Europe, Africa,
-                  and the Middle East
+                  {t("about-vision-4")}
                 </p>
                 {/* <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify leading-10 mt-4 lg:mt-8">
               We enable logistics decarbonisation by aiming for
@@ -110,29 +95,13 @@ function WhoWeAre({ screenWidth }) {
             content={
               <>
                 <p className="leading-2 md:leading-9 text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify">
-                  Our mission is dedicated to raising public awareness about the
-                  importance of transitioning from fossil fuels to sustainable
-                  energy sources. We aim to foster responsible behavior among
-                  individuals and encourage their active participation in
-                  promoting this critical initiative. Moreover, we offer
-                  consulting services to companies, governmental and
-                  non-governmental organizations, to facilitate the
-                  implementation of renewable energy projects across Europe,
-                  Africa, and the Middle East. Our ultimate goal is to promote
-                  sustainable energy solutions and contribute towards the global
-                  transition towards a clean earth for our next generations.
+                  {t("about-mission-1")}
                 </p>
                 <p className="leading-2 md:leading-9 text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify">
-                  At our company, we're committed to promoting sustainable waste
-                  management best-practices and helping governments and
-                  organizations to find the optimal solution for their
-                  challenges.
+                  {t("about-mission-2")}
                 </p>
                 <p className="leading-2 md:leading-9 text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify">
-                  we also connect partners with the right technology provider
-                  and follow-up with them to ensure the best quality of service
-                  and a project completion fulfilling the most added-value to
-                  our customers.
+                  {t("about-mission-3")}
                 </p>
               </>
             }

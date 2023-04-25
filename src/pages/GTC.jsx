@@ -15,7 +15,7 @@ function GTC() {
       }
       `}
       </style>
-      <header className="relative h-[50vh] md:h-[100vh] w-full overflow-hidden">
+      <header className="relative h-[50vh] lg:h-[100vh] w-full overflow-hidden">
         <img className="img-header" src={gtc} />
         <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
           {/* <div className="font-extrabold absolute bottom-0">

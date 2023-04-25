@@ -152,7 +152,7 @@ function Navbar({ screenWidth, navbarColor, scrollPosition, setLang, lang }) {
             <button
               onClick={() => setLang((prev) => (prev == "en" ? "de" : "en"))}
             >
-              {lang == "en" ? "de" : "en"}
+              {lang == "en" ? "DE" : "EN"}
             </button>
           </div>
         </div>
