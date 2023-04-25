@@ -3,8 +3,10 @@ import { BsArrow90DegDown, BsArrow90DegRight } from "react-icons/bs";
 import ScrollToTop from "../components/ScrollToTop";
 import train_img from "../assets/TRAIN-min.jpg";
 import PELLET from "../assets/Pellet_2_Electricity.png";
+import { useTranslation } from "react-i18next";
 
 function Energy() {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <style>
@@ -26,7 +28,7 @@ function Energy() {
       }
       `}
       </style>
-      <header className="relative h-[50vh] md:h-[100vh] w-full overflow-hidden">
+      <header className="relative h-[50vh] lg:h-[100vh] w-full overflow-hidden">
         <img className="img-header" src={train_img} />
         <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
           {/* <div className="font-extrabold absolute bottom-0">
@@ -53,67 +55,44 @@ function Energy() {
           </div> */}
           <div className="flex flex-col items-center justify-around mt-10 h-[120px] mb-[20px]">
             <h1 className="tracking-[1px] w-fit text-xl text-center text-black  font-semibold  ">
-              THE POWER OF STEAM
+              {t("energy-title")}
             </h1>
             <span className="w-[50px] h-[4px] bg-bg-color"></span>
           </div>
           <div className="">
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] tracking-[1px] font-normal text-justify ">
-              One of our core businesses is the ecological generation of
-              electricity and heat from steam by burning pellets. Pellets is a
-              high efficient and renewable source of energy.
+              {t("energy-content-1")}
             </p>
 
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] tracking-[1px] font-normal text-justify ">
-              Here is an example to show the ratio between heat and electricity
-              in case 1 Megawatt electricity is needed.
+              {t("energy-content-2")}
             </p>
 
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] tracking-[1px] font-normal text-justify ">
-              When burning pellets, the process begins by heating water to
-              generate steam. This steam is then directed to turbines, where it
-              flows over the blades and causes them to rotate. As the turbine
-              blades rotate, the mechanical energy generates electricity.
+              {t("energy-content-3")}
             </p>
 
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] tracking-[1px] font-normal text-justify ">
-              1 kg pellets contains 5 megajoules (MJ) energy
+              {t("energy-content-4")}
             </p>
 
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] tracking-[1px] font-normal text-justify ">
-              To generate 1 MW (1000 kwh) of electricity, we need to burn
-              approximately 200 kg of pellets per hour (assuming an efficiency
-              of 20%). When burning 200 kg of pellets, we generate approximately
-              1000 MJ of heat per hour (depending on the energy content of the
-              pellets) which means the heat output is about 96% of the
-              electrical output.
+              {t("energy-content-5")}
             </p>
 
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] tracking-[1px] font-normal text-justify ">
-              200 kg x 5 MJ/kg = 1000 MJ (1'000’000 kJ){" "}
+              {t("energy-content-6")}
             </p>
 
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] tracking-[1px] font-normal text-justify ">
-              The lost energy during the process is heat which could be captured
-              and used for heating buildings, water or even cooling applications
-              through a process called cogeneration or combined heat and power
-              (CHP) .
+              {t("energy-content-7")}
             </p>
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] tracking-[1px] font-normal text-justify ">
-              {" "}
-              The leftover heat energy can be captured and used for cooling
-              through absorption chillers , which use heat to drive a
-              refrigeration cycle instead of electricity. Absorption chillers
-              are commonly used in large commercial and industrial applications,
-              such as hospitals, universities, and data centers.
+              {t("energy-content-8")}
             </p>
 
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] tracking-[1px] font-normal text-justify ">
-              Overall, generating electricity and heat from steam by burning
-              pellets is an efficient method, with a high ratio output of heat
-              to electricity. By using pellets as a renewable energy source, we
-              can reduce our dependence on fossil fuels and contribute to a more
-              sustainable future.
+              {t("energy-content-9")}
             </p>
           </div>
           <img className="mt-24 mb-24" src={PELLET} alt="PELLET" />

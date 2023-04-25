@@ -26,7 +26,7 @@ function Knowledge() {
       `}
       </style>
 
-      <header className="relative h-[50vh] md:h-[100vh] w-full overflow-hidden">
+      <header className="relative h-[50vh] lg:h-[100vh] w-full overflow-hidden">
         <img className="img-header" src={img} />
         <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
           {/* <div className="font-extrabold absolute bottom-0">
@@ -72,7 +72,7 @@ function Knowledge() {
         </div>
 
         <div className="my-8 lg:px-40 flex fle flex-wrap justify-around items-center">
-          <div className="w-full flex justify-center items-center md:w-[47%]">
+          <div className="px-4 md:px-0 w-full flex justify-center items-center md:w-[47%]">
             <ul className="pl-[20px] list-disc">
               <li className="px-3 md:px-0 lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                 {t("knowledge-desc5")}
@@ -114,7 +114,7 @@ function Knowledge() {
         </div>
       </section>
 
-      <header className="relative h-[50vh] md:h-[90vh] my-20 w-full overflow-hidden">
+      <header className="relative h-[50vh] lg:h-[100vh] md:h-[90vh] my-20 w-full overflow-hidden">
         <img className="img-header" src={img3} />
         <div className="container mx-auto px-2 lg:px-14 md:px-0  absolute h-full  flex items-center z-10 inset-0 justify-center  lg:justify-center">
           {/* <div className="font-extrabold absolute bottom-0">
@@ -132,7 +132,7 @@ function Knowledge() {
         </div>
       </header>
 
-      <section className="mt-0 container border border-red-400 lg:px-14 my-20  flex justify-center">
+      <section className="mt-0 container lg:px-14 my-20  flex justify-center">
         <div className="px-4 lg:px-14 md:px-0 mb-6 md:w-[80Vw] lg:w-[60vw] bg-white text-start">
           {/* <div className="flex justify-center my-[60px]">
             <h1 className="page-title tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">

@@ -2,9 +2,15 @@ import { RightOutlined } from "@ant-design/icons";
 import { Parallax } from "react-scroll-parallax";
 import img from "../../assets/img-2.jpg";
 
-const Main_section = ({ reverse, title, content, imgSrc, imgStyle }) => {
-  console.log(window.innerWidth);
-
+const Main_section = ({
+  reverse,
+  title,
+  content,
+  imgSrc,
+  imgStyle,
+  screenWidth,
+}) => {
+  console.log({ imgSrc });
   return (
     <>
       <style jsx="true">

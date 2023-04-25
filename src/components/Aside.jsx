@@ -6,7 +6,8 @@ import { IoLocationSharp } from "react-icons/io5";
 import { BsInstagram, BsTelephoneFill } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { AiOutlineTwitter } from "react-icons/ai";
+import { AiOutlineGlobal, AiOutlineTwitter } from "react-icons/ai";
+import swizzBlack from "../assets/wizz-black.jpg";
 
 const sidebarLinks = [
   {
@@ -31,19 +32,23 @@ const sidebarLinks = [
 const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
   const [menuActive, setMenuActive] = useState(false);
 
-  const activeHandler = () => setMenuActive(!menuActive);
+  const activeHandler = () => {
+    setMenuActive(!menuActive);
+    document.body.classList.toggle("sidebar-open");
+    document.documentElement.classList.toggle("sidebar-open");
+  };
   return (
     <nav
       className=" h-[100px] px] md:mx-0  flex items-center fixed w-[100%] z-20 "
       style={{
-        backgroundColor: screenWidth <= 222 ? navbarColor : "#222",
+        backgroundColor: "transparent",
         transition: "all .3s ease-in",
-        boxShadow:
-          screenWidth <= 767
-            ? scrollPosition > 100
-              ? "0px 15px 45px #00000038"
-              : "none"
-            : "none",
+        // boxShadow:
+        //   screenWidth <= 767
+        //     ? scrollPosition > 100
+        //       ? "0px 15px 45px #00000038"
+        //       : "none"
+        //     : "none",
 
         height: scrollPosition > 100 ? "70px" : "100px",
       }}
@@ -90,30 +95,17 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
       </style>
 
       <div className="container px-3 mx-auto">
-        <div className="borders-container">
-          <div
-            className={`border-top   ${
-              menuActive ? "active" : ""
-            }    bg-[#fff] fixed right-[20px] top-0 h-[20px]`}
-          ></div>
-          <div
-            className={`border-right w-[20px] h-[200px] bg-[#fff] fixed right-0 top-0   ${
-              menuActive ? "active" : ""
-            }  `}
-          ></div>
-        </div>
-
         <div className="navbar_inner   flex justify-between">
           <Link
             style={{
               fontFamily: "larsseit-medium",
               letterSpacing: "1.5px",
             }}
-            className="mt-2 text-2xl text-bg-color font-bold swiss energy hub"
+            className="mt-2 text-2xl text-bg-color font-bold"
             to={"/"}
           >
             {/* <img width={150} height="60" src={logo} title="" alt="logo" /> */}
-            <p>swiss energy hub</p>
+            {/* <p>swiss energy hub</p> */}
           </Link>
           <div className="sidebar-container z-50" onClick={activeHandler}>
             <button
@@ -129,10 +121,23 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
         </div>
       </div>
       <aside
-        className={`bg-[#fff] w-[100%] max-w-[450px] fixed right-0 h-[100vh] top-0 px-4 py-4  ${
+        className={`${
+          menuActive && "shadow-2xl"
+        } bg-[#fff] w-[100%] max-w-[450px] fixed right-0 h-[100vh] top-0 px-4 py-4  ${
           !menuActive ? "right-[-450px]  active" : "  right-0"
         } flex flex-col    justify-center  `}
       >
+        <Link
+          style={{
+            fontFamily: "larsseit-medium",
+            letterSpacing: "1.5px",
+          }}
+          className="mt-2 text-center mb-7 text-2xl text-bg-color font-bold"
+          to={"/"}
+        >
+          {/* <img width={150} height="60" src={logo} title="" alt="logo" /> */}
+          <p>swiss energy hub</p>
+        </Link>
         <div className="flex   flex-col">
           <ul className="sidebar-ul">
             {sidebarLinks.map(({ link }, index) => {
@@ -142,6 +147,7 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
                   key={index}
                 >
                   <NavLink
+                    onClick={activeHandler}
                     to={`/${link}`}
                     className="capitalize  hover:text-[#c00000]"
                   >
@@ -187,10 +193,24 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
                 info@swissenergyhub.com
               </a>
             </li>
+            <li>
+              <NavLink
+                onClick={activeHandler}
+                to={`/`}
+                className="mt-2 flex gap-3 text-[#333] transition-all duration-75 ease-in-out hover:text-black text-sm "
+              >
+                <AiOutlineGlobal
+                  style={{
+                    fontSize: "17px",
+                  }}
+                />
+                www.swissenergyhub.com{" "}
+              </NavLink>
+            </li>
           </ul>
         </div>
 
-        <ul className="social-media flex gap-4 mt-4">
+        {/* <ul className="social-media flex gap-4 mt-4">
           <li>
             <Link to="/">
               <FaFacebookF className="mb-4  text-[17px]" />
@@ -211,7 +231,10 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
               <AiOutlineTwitter className="mb-4  text-[17px]" />
             </Link>
           </li>
-        </ul>
+        </ul> */}
+        <div className="w-full flex justify-center">
+          <img src={swizzBlack} className="w-[200px]" alt="" />
+        </div>
       </aside>
     </nav>
   );

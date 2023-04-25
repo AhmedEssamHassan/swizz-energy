@@ -112,7 +112,7 @@ function Navbar({ screenWidth, navbarColor, scrollPosition, setLang, lang }) {
         }}
         className="z-50 fixed top-0 left-0 w-full h-[100px] flex items-center bg-transparent "
       >
-        <div className="border border-red-500 container mx-auto px-0 lg:px-14 flex justify-between items-center ">
+        <div className="container mx-auto px-0 lg:px-14 flex justify-between items-center ">
           {/* <Link className="text-[#c00000] text-2xl font-bold" to={"/"}>
             swiss energy hub
           </Link> */}
@@ -152,7 +152,7 @@ function Navbar({ screenWidth, navbarColor, scrollPosition, setLang, lang }) {
             <button
               onClick={() => setLang((prev) => (prev == "en" ? "de" : "en"))}
             >
-              {lang == "en" ? "de" : "en"}
+              {lang == "en" ? "DE" : "EN"}
             </button>
           </div>
         </div>
