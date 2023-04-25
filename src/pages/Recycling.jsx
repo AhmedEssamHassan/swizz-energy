@@ -3,7 +3,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import recycle from "../assets/RECYCLE-min.jpg";
 import samara from "../assets/SAMARA-min.jpg";
 import img from "../assets/CO2-min.jpg";
-function Recycling() {
+function Recycling({ screenWidth }) {
   return (
     <>
       <style jsx="true">
@@ -51,11 +51,13 @@ function Recycling() {
       <section className="mt-0">
         <ScrollToTop />
         <div className=" bg-white text-center">
-          <div className="flex justify-center my-[60px]">
-            <h1 className="page-title3 tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
+          <div className="flex flex-col items-center justify-around h-[120px] mb-[20px]">
+            <h1 className="tracking-[1px] w-fit text-xl text-center text-black  font-semibold  ">
               THE POWER OF WASTE
             </h1>
+            <span className="w-[50px] h-[4px] bg-bg-color"></span>
           </div>
+
           <div className="px-4 mt-9 w-full md:w-[80Vw] lg:w-[60vw] text-justify md:text-justify flex mx-auto lg:px-14">
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] mb-16">
               We are passionate about alternative energy resources through waste
@@ -83,35 +85,43 @@ function Recycling() {
             windowWidth="1024"
             content={
               <>
-                <table className="w-[350px]">
+                <table className="w-[350px] text-white md:text-text-color">
                   <tbody>
                     <tr className="text-lg">
-                      <td>Landfill</td>
-                      <td>Compaction</td>
+                      <td className="text-white md:text-text-color">
+                        Landfill
+                      </td>
+                      <td className="text-white md:text-text-color">
+                        Compaction
+                      </td>
                     </tr>
                     <tr className="text-lg">
-                      <td>Incineration</td>
-                      <td>Composting</td>
+                      <td className="text-white md:text-text-color">
+                        Incineration
+                      </td>
+                      <td className="text-white md:text-text-color">
+                        Composting
+                      </td>
                     </tr>
                   </tbody>
                 </table>
-                <h1 className="text-xl text-center mb-5 mt-5 text-white lg:text-black  font-semibold py-5 ">
+                <h1 className="text-xl text-center mb-5 mt-5 text-white md:text-black border  font-semibold py-5 ">
                   Simple ways to practise waste segregation
                 </h1>
                 <ul className="pl-[20px] list-disc">
-                  <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+                  <li className="px-3 md:px-0 text-white md:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                     Keep separate containers for dry and wet waste in the
                     kitchen.
                   </li>
-                  <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+                  <li className="px-3 md:px-0 text-white md:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                     Keep two bags for dry waste collection- paper and plastic,
                     for the rest of the household waste.
                   </li>
-                  <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+                  <li className="px-3 md:px-0 text-white md:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                     Keep plastic from the kitchen clean and dry and drop into
                     the dry waste bin.
                   </li>
-                  <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+                  <li className="px-3 md:px-0 text-white md:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                     {" "}
                     Send wet waste out of your home daily.
                   </li>
@@ -127,67 +137,102 @@ function Recycling() {
             windowWidth="1024"
             content={
               <>
-                <table className="w-full">
-                  <tbody>
-                    <tr className="text-lg ">
-                      <th className="w-[50%]  text-white lg:text-black">
-                        Non-Bio Degradable
-                      </th>
-                      <th className="w-[50%]  text-white lg:text-black">
-                        Bio Degradable
-                      </th>
-                    </tr>
-                    <tr className="text-lg">
-                      <td>
-                        <ul>
-                          <li className="text-start">
-                            <span className="font-bold text-start text-lg block mb-1">
-                              A. Recyclable Waste
-                            </span>
-                            Plastics, Paper, Glass, Metal…
-                          </li>
-                          <br />
-                          <li className="mb-1 text-start">
-                            <span className="font-bold text-start text-lg block mb-1">
-                              B. Toxic Waste
-                            </span>
-                            Old Medicine, paints, Chemicals, bulbs, Spray Cans,
-                            fertilizer and pesticide containers, batteries, shoe
-                            polish.
-                          </li>
-                          <br />
-                          <li className="mb-1 text-start">
-                            <span className="font-bold text-start text-lg block mb-1">
-                              C. Soiled
-                            </span>
-                            Hospital waste: <br />
-                            <ul className="text-lg ">
-                              <li className="text-start">
-                                cloth soiled with blood{" "}
-                              </li>
-                              <li className="text-start">body fluids</li>
-                              <li className="text-start">
-                                Toxic & soiled waste must be <br />
-                                disposed with utmost care
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </td>
-                      <td className="flex">
-                        <ul className="text-lg ml-12">
-                          <li className="mb-1 text-start">organic waste </li>
-                          <li className="mb-1 text-start">wet waste </li>
-                          <li className="mb-1 text-start">kitchen waste </li>
-                          <li className="mb-1 text-start">
-                            vegetables, fruits, flowers
-                            <br /> garden leaves
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                {screenWidth > 700 ? (
+                  <table className="w-full ">
+                    <tbody>
+                      <tr className="text-lg ">
+                        <th className="w-[50%]  text-white md:text-black border">
+                          Non-Bio Degradable
+                        </th>
+                        <th className="w-[50%]  text-white md:text-black border">
+                          Bio Degradable
+                        </th>
+                      </tr>
+                      <tr className="text-lg">
+                        <td>
+                          <ul className="text-white md:text-black">
+                            <li className="text-start">
+                              <span className="font-bold text-start text-lg block mb-1">
+                                A. Recyclable Waste
+                              </span>
+                              Plastics, Paper, Glass, Metal…
+                            </li>
+                            <br />
+                            <li className="mb-1 text-start">
+                              <span className="font-bold text-start text-lg block mb-1">
+                                B. Toxic Waste
+                              </span>
+                              Old Medicine, paints, Chemicals, bulbs, Spray
+                              Cans, fertilizer and pesticide containers,
+                              batteries, shoe polish.
+                            </li>
+                            <br />
+                            <li className="mb-1 text-start">
+                              <span className="font-bold text-start text-lg block mb-1">
+                                C. Soiled
+                              </span>
+                              Hospital waste: <br />
+                              <ul className="text-lg ">
+                                <li className="text-start">
+                                  cloth soiled with blood{" "}
+                                </li>
+                                <li className="text-start">body fluids</li>
+                                <li className="text-start">
+                                  Toxic & soiled waste must be <br />
+                                  disposed with utmost care
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </td>
+                        <td className="flex">
+                          <ul className="text-lg ml-12 text-white md:text-black">
+                            <li className="mb-1 text-start">organic waste </li>
+                            <li className="mb-1 text-start">wet waste </li>
+                            <li className="mb-1 text-start">kitchen waste </li>
+                            <li className="mb-1 text-start">
+                              vegetables, fruits, flowers
+                              <br /> garden leaves
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                ) : (
+                  <div className="text-white w-[100vw] flex flex-col justify-center items-center">
+                    <h2 className="text-xl">Non-Bio Degradable </h2>
+                    <br />
+                    <ul className="text-center px-3">
+                      <li>
+                        <h2 className="font-bold">A. Recyclable Waste</h2>
+                        <p>Plastics, Paper, Glass, Metal…</p>
+                      </li>
+                      <li>
+                        <h2 className="font-bold">B. Toxic Waste</h2>
+                        <p>
+                          Old Medicine, paints, Chemicals, bulbs, Spray Cans,
+                          fertilizer and pesticide containers, batteries, shoe
+                          polish.
+                        </p>
+                      </li>
+                      <li>
+                        <h2 className="font-bold">C. Soiled</h2>
+                        <p>
+                          Hospital waste: cloth soiled with blood body fluids
+                          Toxic & soiled waste must be disposed with utmost care
+                        </p>
+                      </li>
+                    </ul>
+                    <br />
+                    <h2 className="text-center text-xl">Non-Bio Degradable </h2>
+                    <br />
+                    <p className="text-center">
+                      organic waste wet waste kitchen waste vegetables, fruits,
+                      flowers garden leaves
+                    </p>
+                  </div>
+                )}
               </>
             }
             title="Types of waste"

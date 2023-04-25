@@ -44,31 +44,32 @@ function Knowledge() {
       <section className="mt-0 ">
         <ScrollToTop />
         <div className=" bg-white text-center mb-9">
-          <div className="flex justify-center my-[60px]">
-            <h1 className="page-title3 tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
+          <div className="flex flex-col items-center mt-10 justify-around h-[120px] mb-[20px]">
+            <h1 className="tracking-[1px] w-fit text-lg md:text-xl text-center text-black  font-semibold  ">
               THE POWER OF KNOWLEDGE
             </h1>
+            <span className="w-[50px] h-[4px] bg-bg-color"></span>
           </div>
           <div className="px-4 w-full md:w-[80Vw] lg:w-[60vw] text-justify md:text-justify mb-28 flex mx-auto lg:px-14">
             <ul className="pl-[20px] list-disc">
-              <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+              <li className="px-3 md:px-0 lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                 The global average atmospheric carbon dioxide level is nearly
                 417 ppm parts per million due to 2400 Gigatons of carbon dioxide
                 (CO2) caused by human activities since the industrial era start.
                 This includes emissions from fossil fuels, deforestation and
                 other land-use changes.
               </li>
-              <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+              <li className="px-3 md:px-0 lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                 The concentration of carbon dioxide in the atmosphere has
                 increased by more than 40% since the beginning of the industrial
                 era.
               </li>
-              <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+              <li className="px-3 md:px-0 lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                 To put this in perspective, it is estimated that the Earth's
                 atmosphere can absorb a maximum of around 3,000 Gt of CO2 before
                 reaching dangerous levels of global warming.
               </li>
-              <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+              <li className="px-3 md:px-0 lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                 To limit the most severe impacts of climate change, it is
                 necessary to reduce carbon dioxide emissions and transition to a
                 low-carbon economy. Paris Agreement, signed by 197 countries in
@@ -85,19 +86,19 @@ function Knowledge() {
         <div className="my-8 lg:px-40 flex fle flex-wrap justify-around items-center">
           <div className="w-full flex justify-center items-center md:w-[47%]">
             <ul className="pl-[20px] list-disc">
-              <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+              <li className="px-3 md:px-0 lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                 Within the last 50 years The ppm jumped from 315 to 415 Let’s
                 imagine that the critical level for a human being to live and
                 breath is 800 ppm (recommended indoor averages are between 600
                 to 1000 ppm).
               </li>
-              <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+              <li className="px-3 md:px-0 lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                 burning of fossil fuels for energy is the largest contributor to
                 global carbon dioxide emissions, accounting for around 75%-85%
                 of total emissions, mainly used for Industry, heat + electricity
                 + transportation
               </li>
-              <li className="px-3 md:px-0 text-white lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
+              <li className="px-3 md:px-0 lg:text-text-color leading-normal md:leading-8   text-[18px]  font-normal tracking-[1px] mb-2">
                 Fossil fuel use created 33.2 billion tons of carbon dioxide
                 emissions in 2011 worldwide
               </li>
@@ -160,7 +161,7 @@ function Knowledge() {
         </div>
       </header>
 
-      <section className="mt-0 container lg:px-14 my-20  flex justify-center">
+      <section className="mt-0 container border border-red-400 lg:px-14 my-20  flex justify-center">
         <div className="px-4 lg:px-14 md:px-0 mb-6 md:w-[80Vw] lg:w-[60vw] bg-white text-start">
           {/* <div className="flex justify-center my-[60px]">
             <h1 className="page-title tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
