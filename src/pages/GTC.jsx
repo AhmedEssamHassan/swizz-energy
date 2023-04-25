@@ -61,7 +61,6 @@ function GTC() {
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
               {t("gtc-desc6")}
             </p>
-
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
               {t("gtc-nego")}
               <br />
@@ -82,9 +81,56 @@ function GTC() {
               {t("gtc-desc11")}
             </p>
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
-              The customer agrees that SEH will pass on information about
-              payment processing to Creditreform Associations to check the
-              customer's creditworthiness in case of delayed payments
+              {t("gtc-desc12")}
+            </p>
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+              {t("gtc-desc13")}
+            </p>
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+              {t("gtc-modalities")}
+              <br />
+              {t("gtc-desc14")}
+            </p>
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+              {t("gtc-desc15")}
+            </p>
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+              {t("gtc-desc16")}
+            </p>
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+              {t("gtc-desc17")}
+            </p>
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+              {t("gtc-desc18")}
+            </p>
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+              {t("gtc-desc19")}
+            </p>
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+              {t("gtc-desc20")}
+              <br />
+            </p>
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+              {t("gtc-desc21")}
+            </p>
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+              {t("gtc-desc22")}
+            </p>
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+              {t("gtc-desc23")}
+              <br />
+              {t("gtc-desc24")}
+            </p>
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+              {t("gtc-desc25")}
+              <br />
+              {t("gtc-desc26")}
+            </p>
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+              {t("gtc-desc27")}
+            </p>
+            <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px] text-justify ">
+              {t("gtc-desc28")}
             </p>
           </div>
         </div>
