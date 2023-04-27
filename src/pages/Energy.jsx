@@ -4,9 +4,11 @@ import ScrollToTop from "../components/ScrollToTop";
 import train_img from "../assets/TRAIN-min.jpg";
 import PELLET from "../assets/Pellet_2_Electricity.png";
 import { useTranslation } from "react-i18next";
+import { Parallax } from "react-scroll-parallax";
 
 function Energy() {
   const { t, i18n } = useTranslation();
+
   return (
     <>
       <style>
