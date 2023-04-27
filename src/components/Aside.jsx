@@ -39,9 +39,8 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
   };
   return (
     <nav
-      className=" h-[100px] px] md:mx-0  flex items-center fixed w-[100%] z-20 "
+      className="bg-[#333] shadow-xl h-[100px] md:mx-0  flex items-center fixed w-[100%] z-20 "
       style={{
-        backgroundColor: "transparent",
         transition: "all .3s ease-in",
         // boxShadow:
         //   screenWidth <= 767
@@ -93,9 +92,19 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
           }
         `}
       </style>
-
       <div className="container px-3 mx-auto">
-        <div className="navbar_inner   flex justify-between">
+        <div className="navbar_inner items-center flex justify-between">
+          <Link
+            style={{
+              fontFamily: "larsseit-medium",
+              letterSpacing: "1.5px",
+            }}
+            className="text-center text-2xl text-bg-color font-bold"
+            to={"/"}
+          >
+            {/* <img width={150} height="60" src={logo} title="" alt="logo" /> */}
+            <p>swiss energy hub</p>
+          </Link>
           <Link
             style={{
               fontFamily: "larsseit-medium",

@@ -53,7 +53,7 @@ function Recycling({ screenWidth }) {
 
       <section className="mt-0">
         <ScrollToTop />
-        <div className=" bg-white text-center">
+        <div className="mt-10 bg-white text-center">
           <div className="flex flex-col items-center justify-around h-[120px] mb-[20px]">
             <h1 className="tracking-[1px] w-fit text-xl text-center text-black  font-semibold  ">
               {t("recycling-title")}

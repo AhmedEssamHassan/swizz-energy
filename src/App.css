@@ -130,5 +130,5 @@ header::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(179, 170, 170, 0.123);
+  background-color: rgba(71, 65, 65, 0.295);
 }

@@ -8,8 +8,12 @@ import { BsInstagram, BsTelephoneFill } from "react-icons/bs";
 import swizzWhite from "../../assets/swizz-white.jpg";
 import swizzBlack from "../../assets/wizz-black.jpg";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 function Footer() {
   const [isHover, setIsHover] = useState(false);
+  const { t, i18n } = useTranslation();
+
   return (
     <footer className="relative bg-[#333333] flex flex-col justify-around min-h-[calc(100vh-100px)] items-center py-10">
       {/* <div className="social absolute flex flex-col left-0 bottom-20 px-5">
@@ -115,7 +119,7 @@ function Footer() {
             to="gtc"
             className=" contact-text text-[14px] font-[600] text-center cursor-pointer"
           >
-            GTC
+            {t("GTC")}
           </Link>
         </div>
       </div>

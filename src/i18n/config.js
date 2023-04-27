@@ -4,7 +4,7 @@ import de from "./locales/de/translations.json";
 import en from "./locales/en/translations.json";
 i18n.use(initReactI18next).init({
   fallbackLng: "en",
-  lng: "en",
+  lng: localStorage.getItem("lang"),
   resources: {
     de: {
       translations: de,

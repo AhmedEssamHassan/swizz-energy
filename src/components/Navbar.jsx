@@ -1,6 +1,5 @@
 import React from "react";
 import { Menu } from "antd";
-import logo from "../assets/swiss-logo.jpg";
 import { useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -9,7 +8,7 @@ function Navbar({ screenWidth, navbarColor, scrollPosition, setLang, lang }) {
   const menuItems = [
     {
       path: "/services",
-      label: t("services"),
+      label: t("Services"),
     },
     {
       path: "/recycling",
@@ -17,7 +16,7 @@ function Navbar({ screenWidth, navbarColor, scrollPosition, setLang, lang }) {
     },
     {
       path: "/energy",
-      label: "Energy",
+      label: t("Energy"),
     },
     {
       path: "/hydrogen",
@@ -29,11 +28,11 @@ function Navbar({ screenWidth, navbarColor, scrollPosition, setLang, lang }) {
     },
     {
       path: "/knowledge",
-      label: "Knowledge",
+      label: t("Knowledge"),
     },
     {
       path: "/about",
-      label: "About us",
+      label: t("About_us"),
     },
   ];
   const items = menuItems.map((item) => {

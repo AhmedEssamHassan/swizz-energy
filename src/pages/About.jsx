@@ -62,7 +62,7 @@ function WhoWeAre({ screenWidth }) {
             screenWidth={screenWidth}
             title="Vision"
             reverse={false}
-            // imgSrc={img1}
+            imgSrc={img1}
             content={
               <div>
                 <p className=" text-white md:text-text-color text-[18px] font-norma tracking-[1px] text-center md:text-justify leading-10">

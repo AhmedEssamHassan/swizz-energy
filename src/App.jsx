@@ -29,7 +29,7 @@ function App() {
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const [navbarColor, setNavbarColor] = useState("transparent");
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState("de");
   useEffect(() => {
     const handleScroll = () => {
       const position = window.pageYOffset;
@@ -61,6 +61,7 @@ function App() {
   }, []);
 
   useEffect(() => {
+    localStorage.setItem("lang", lang);
     if (lang == "en") {
       i18n.changeLanguage("en");
     } else {
