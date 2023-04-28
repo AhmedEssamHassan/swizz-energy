@@ -46,11 +46,13 @@ function WhoWeAre({ screenWidth }) {
       <section className="mt-0 ">
         <ScrollToTop />
         <div className=" bg-white text-center mb-9">
-          <div className="flex justify-center my-[60px]">
-            <h1 className="page-title3 tracking-[1px] w-fit text-xl text-center mb-5 mt-5 text-black  font-semibold py-5 ">
+          <div className="flex flex-col items-center justify-around mt-10 h-[120px] mb-[20px]">
+            <h1 className="tracking-[1px] w-fit text-xl text-center text-black  font-semibold  ">
               {t("about-title")}
             </h1>
+            <span className="w-[50px] h-[4px] bg-bg-color"></span>
           </div>
+
           <div className="px-4 w-full md:w-[80Vw] lg:w-[60vw] text-justify md:text-justify flex mx-auto lg:px-14">
             <p className="leading-10 px-3 md:px-0 text-text-color text-[18px] font-normal tracking-[1px]">
               {t("about-head")}
