@@ -76,7 +76,9 @@ function App() {
         overflow: hidden;
       }
       `}</style>
-      <Cursor color="#fff" ringSize={"20px"} cursorSize="5px" />
+      {screenWidth > 1024 && (
+        <Cursor color="#fff" ringSize={"20px"} cursorSize="5px" />
+      )}
       <a
         href="https://calendly.com/swissenergyhub"
         target={"_blank"}
@@ -96,6 +98,8 @@ function App() {
           />
         ) : (
           <Aside
+            lang={lang}
+            setLang={setLang}
             scrollPosition={scrollPosition}
             screenWidth={screenWidth}
             navbarColor={navbarColor}

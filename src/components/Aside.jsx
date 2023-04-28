@@ -8,29 +8,37 @@ import { IoIosMail } from "react-icons/io";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineGlobal, AiOutlineTwitter } from "react-icons/ai";
 import swizzBlack from "../assets/wizz-black.jpg";
+import { useTranslation } from "react-i18next";
 
 const sidebarLinks = [
   {
     link: "energy",
+    key: "Energy",
   },
   {
     link: "recycling",
+    key: "Recycling",
   },
   {
     link: "pellets",
+    key: "Pellets",
   },
   {
     link: "hydrogen",
+    key: "Hydrogen",
   },
   {
     link: "knowledge",
+    key: "Knowledge",
   },
   {
     link: "about",
+    key: "About_us",
   },
 ];
-const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
+const Aside = ({ scrollPosition, lang, setLang, screenWidth, navbarColor }) => {
   const [menuActive, setMenuActive] = useState(false);
+  const { t, i18n } = useTranslation();
 
   const activeHandler = () => {
     setMenuActive(!menuActive);
@@ -39,7 +47,7 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
   };
   return (
     <nav
-      className="bg-[#333] shadow-xl h-[100px] md:mx-0  flex items-center fixed w-[100%] z-20 "
+      className="bg-transparent h-[100px] md:mx-0  flex items-center fixed w-[100%] z-20 "
       style={{
         transition: "all .3s ease-in",
         // boxShadow:
@@ -94,7 +102,7 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
       </style>
       <div className="container px-3 mx-auto">
         <div className="navbar_inner items-center flex justify-between">
-          <Link
+          {/* <Link
             style={{
               fontFamily: "larsseit-medium",
               letterSpacing: "1.5px",
@@ -102,29 +110,26 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
             className="text-center text-2xl text-bg-color font-bold"
             to={"/"}
           >
-            {/* <img width={150} height="60" src={logo} title="" alt="logo" /> */}
             <p>swiss energy hub</p>
-          </Link>
-          <Link
-            style={{
-              fontFamily: "larsseit-medium",
-              letterSpacing: "1.5px",
-            }}
-            className="mt-2 text-2xl text-bg-color font-bold"
-            to={"/"}
-          >
-            {/* <img width={150} height="60" src={logo} title="" alt="logo" /> */}
-            {/* <p>swiss energy hub</p> */}
-          </Link>
+          </Link> */}
+          <div className="sidebar-container z-50">
+            <button
+              className={`bg-[#333] w-10 h-10 text-white font-bold rounded-xl flex justify-center items-center outline-0 transition-all`}
+              onClick={() => setLang((prev) => (prev == "en" ? "de" : "en"))}
+            >
+              {lang == "en" ? "DE" : "EN"}
+            </button>
+          </div>
           <div className="sidebar-container z-50" onClick={activeHandler}>
             <button
-              className={`hamburger-menu flex flex-col gap-2 outline-0 mr-3 ${
-                menuActive && "translate-y-2"
-              }
-              transition-all delay-[2000]}
-               `}
+              className={`bg-[#333] rounded-xl flex justify-center items-center outline-0 transition-all`}
             >
-              <Hamburger toggled={menuActive} toggle={setMenuActive} />
+              <Hamburger
+                color="white"
+                size={20}
+                toggled={menuActive}
+                toggle={setMenuActive}
+              />
             </button>
           </div>
         </div>
@@ -137,6 +142,7 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
         } flex flex-col    justify-center  `}
       >
         <Link
+          onClick={activeHandler}
           style={{
             fontFamily: "larsseit-medium",
             letterSpacing: "1.5px",
@@ -149,18 +155,15 @@ const Aside = ({ scrollPosition, screenWidth, navbarColor }) => {
         </Link>
         <div className="flex   flex-col">
           <ul className="sidebar-ul">
-            {sidebarLinks.map(({ link }, index) => {
+            {sidebarLinks.map(({ link, key }, index) => {
               return (
-                <li
-                  className="mb-2 text-sm sm:text-base font-bold "
-                  key={index}
-                >
+                <li className="mb-2 text-sm sm:text-base font-bold " key={key}>
                   <NavLink
                     onClick={activeHandler}
                     to={`/${link}`}
                     className="capitalize  hover:text-[#c00000]"
                   >
-                    {link}
+                    {t(key)}
                   </NavLink>
                 </li>
               );
