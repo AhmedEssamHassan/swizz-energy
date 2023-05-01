@@ -3,6 +3,7 @@ import { Menu } from "antd";
 import { useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 function Navbar({ screenWidth, navbarColor, scrollPosition, setLang, lang }) {
   const { t, i18n } = useTranslation();
   const menuItems = [
@@ -148,13 +149,18 @@ function Navbar({ screenWidth, navbarColor, scrollPosition, setLang, lang }) {
               <span className="text-[15px] font-[600]">Let's Talk</span>
             </a> */}
             </div>
-            <button
-              onClick={() => setLang((prev) => (prev == "en" ? "de" : "en"))}
-            >
-              {lang == "en" ? "DE" : "EN"}
-            </button>
           </div>
         </div>
+        <button
+          className="absolute right-5"
+          onClick={() => setLang((prev) => (prev == "en" ? "de" : "en"))}
+        >
+          {lang == "en" ? (
+            <span class="fi fi-de rounded"></span>
+          ) : (
+            <span class="fi fi-gb rounded"></span>
+          )}
+        </button>
       </nav>
     </>
   );
