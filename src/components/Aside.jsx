@@ -9,6 +9,7 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineGlobal, AiOutlineTwitter } from "react-icons/ai";
 import swizzBlack from "../assets/wizz-black.jpg";
 import { useTranslation } from "react-i18next";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 const sidebarLinks = [
   {
@@ -47,7 +48,9 @@ const Aside = ({ scrollPosition, lang, setLang, screenWidth, navbarColor }) => {
   };
   return (
     <nav
-      className="bg-transparent h-[100px] md:mx-0  flex items-center fixed w-[100%] z-20 "
+      className={`${
+        scrollPosition > 100 && "bg-[#fffff96] shadow-lg backdrop-blur-lg"
+      } h-[100px] md:mx-0  flex items-center fixed w-[100%] z-20 `}
       style={{
         transition: "all .3s ease-in",
         // boxShadow:
@@ -117,7 +120,11 @@ const Aside = ({ scrollPosition, lang, setLang, screenWidth, navbarColor }) => {
               className={`bg-[#333] w-10 h-10 text-white font-bold rounded-xl flex justify-center items-center outline-0 transition-all`}
               onClick={() => setLang((prev) => (prev == "en" ? "de" : "en"))}
             >
-              {lang == "en" ? "DE" : "EN"}
+              {lang == "en" ? (
+                <span class="fi fi-de rounded"></span>
+              ) : (
+                <span class="fi fi-gb rounded"></span>
+              )}
             </button>
           </div>
           <div className="sidebar-container z-50" onClick={activeHandler}>
